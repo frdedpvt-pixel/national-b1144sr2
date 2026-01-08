@@ -3,7 +3,7 @@ import apiClient from '../../api/client';
 import Navbar from '../../components/Navbar';
 import PostCard from '../../components/PostCard';
 
-export default function Feed() {
+export default function TeacherFeed() {
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [posting, setPosting] = useState(false);
@@ -26,7 +26,7 @@ export default function Feed() {
 
     const fetchFeed = async () => {
         try {
-            const response = await apiClient.get('/student/feed');
+            const response = await apiClient.get('/teacher/feed');
             setPosts(response.data.posts);
         } catch (error) {
             console.error('Failed to fetch feed:', error);
@@ -59,7 +59,7 @@ export default function Feed() {
                 formData.append('image', newPost.imageFile);
             }
 
-            const response = await apiClient.post('/student/post', formData, {
+            const response = await apiClient.post('/teacher/post', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
@@ -70,7 +70,7 @@ export default function Feed() {
             setShowForm(false);
             // Refresh feed
             fetchFeed();
-            setActiveTag('All'); // Reset filter to see new post
+            setActiveTag('All'); // Reset filter
         } catch (error) {
             setError(error.response?.data?.error || 'Failed to create post');
         } finally {
@@ -113,6 +113,9 @@ export default function Feed() {
                 {showForm && (
                     <div className="card mb-lg">
                         <h3 className="mb-md">Create New Post</h3>
+                        <div className="alert alert-info mb-md">
+                            ✓ Your posts are automatically approved (no AI moderation)
+                        </div>
 
                         {error && <div className="alert alert-danger mb-md">{error}</div>}
                         {success && <div className="alert alert-success mb-md">{success}</div>}

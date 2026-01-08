@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
 export default function Login() {
@@ -81,6 +81,15 @@ export default function Login() {
                     </p>
                     <p style={{ fontSize: '0.75rem', margin: '0.25rem 0', color: 'var(--color-text-secondary)' }}>
                         <strong>Student:</strong> priya@student.edu / student123
+                    </p>
+                </div>
+
+                <div className="text-center mt-lg">
+                    <p className="text-secondary">
+                        Don't have an account?{' '}
+                        <Link to="/signup" style={{ color: 'var(--color-primary)', textDecoration: 'none', fontWeight: '500' }}>
+                            Sign Up
+                        </Link>
                     </p>
                 </div>
             </div>

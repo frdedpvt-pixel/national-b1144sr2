@@ -56,7 +56,7 @@ export default function PostCard({ post }) {
 
             {post.image && (
                 <img
-                    src={post.image}
+                    src={`http://localhost:5001${post.image}`}
                     alt="Post"
                     style={{
                         width: '100%',

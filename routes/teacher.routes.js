@@ -2,6 +2,9 @@ import express from 'express';
 import { query, queryOne, run } from '../database/db.js';
 import { authenticate, requireTeacher } from '../middleware/auth.js';
 import { config } from '../config.js';
+import bcrypt from 'bcryptjs';
+import upload from '../middleware/upload.js';
+import fs from 'fs';
 
 const router = express.Router();
 
@@ -42,16 +45,122 @@ router.get('/dashboard', async (req, res) => {
 });
 
 /**
+ * GET /api/teacher/feed
+ * View school feed (same as students)
+ */
+router.get('/feed', async (req, res) => {
+    try {
+        const page = parseInt(req.query.page) || 1;
+        const limit = 10;
+        const offset = (page - 1) * limit;
+
+        // Get approved posts with user info
+        const posts = await query(`
+      SELECT 
+        p.id, p.content, p.image, p.tag, p.created_at,
+        u.id as author_id, u.name as author_name, u.role as author_role,
+        u.class as author_class, u.section as author_section, u.profile_picture
+      FROM posts p
+      JOIN users u ON p.user_id = u.id
+      WHERE p.moderation_status = 'approved'
+      ORDER BY p.created_at DESC
+      LIMIT ${limit} OFFSET ${offset}
+    `);
+
+        // Get total count
+        const totalResult = await queryOne(`
+      SELECT COUNT(*) as count FROM posts WHERE moderation_status = 'approved'
+    `);
+        const total = totalResult ? totalResult.count : 0;
+
+        res.json({
+            posts,
+            pagination: {
+                page,
+                limit,
+                total,
+                totalPages: Math.ceil(total / limit)
+            }
+        });
+    } catch (error) {
+        console.error('Feed error:', error);
+        res.status(500).json({ error: 'Failed to fetch feed' });
+    }
+});
+
+/**
+ * POST /api/teacher/post
+ * Create a new post (bypasses AI moderation)
+ * Teacher posts are automatically approved and published
+ * Images are NOT analyzed - teachers are trusted
+ */
+router.post('/post', upload.single('image'), async (req, res) => {
+    try {
+        const { content, tag } = req.body;
+
+        // Validate required fields
+        if (!content || !tag) {
+            // Delete uploaded file if validation fails
+            if (req.file) {
+                fs.unlinkSync(req.file.path);
+            }
+            return res.status(400).json({ error: 'Content and tag are required' });
+        }
+
+        // Validate tag
+        const validTags = ['#Academics', '#Sports', '#Art', '#Fest', '#Help'];
+        if (!validTags.includes(tag)) {
+            // Delete uploaded file if validation fails
+            if (req.file) {
+                fs.unlinkSync(req.file.path);
+            }
+            return res.status(400).json({ error: 'Invalid tag' });
+        }
+
+        // Get image path (if uploaded)
+        const imagePath = req.file ? `/uploads/${req.file.filename}` : null;
+
+        // Teachers bypass AI moderation - publish immediately as approved
+        const result = await run(
+            `INSERT INTO posts (user_id, content, image, tag, moderation_status)
+       VALUES (?, ?, ?, ?, 'approved')`,
+            [req.user.id, content, imagePath, tag]
+        );
+
+        res.status(201).json({
+            message: 'Post published successfully',
+            postId: result.lastInsertRowid
+        });
+    } catch (error) {
+        console.error('Teacher post creation error:', error);
+
+        // Delete uploaded file if error occurs
+        if (req.file) {
+            try {
+                fs.unlinkSync(req.file.path);
+            } catch (unlinkError) {
+                console.error('Failed to delete uploaded file:', unlinkError);
+            }
+        }
+
+        res.status(500).json({ error: 'Failed to create post' });
+    }
+});
+
+/**
  * GET /api/teacher/students/pending
  * List pending students
  */
 router.get('/students/pending', async (req, res) => {
     try {
         const students = await query(`
-      SELECT id, name, email, class, section, roll_number, school_id, created_at
-      FROM users
-      WHERE role = 'student' AND approval_status = 'pending'
-      ORDER BY created_at ASC
+      SELECT u.id, u.name, u.email, u.class, u.section, u.roll_number, u.school_id, u.created_at,
+             u.id_card_photo,
+             COALESCE(t.blocked_posts_count, 0) as blocked_posts_count
+      FROM users u
+      LEFT JOIN trust_signals t ON u.id = t.user_id
+      WHERE u.role = 'student' AND u.approval_status = 'pending'
+      ORDER BY u.created_at ASC
     `);
 
         res.json({ students });
@@ -68,10 +177,13 @@ router.get('/students/pending', async (req, res) => {
 router.get('/students/approved', async (req, res) => {
     try {
         const students = await query(`
-      SELECT id, name, email, class, section, roll_number, school_id, created_at
-      FROM users
-      WHERE role = 'student' AND approval_status = 'approved'
-      ORDER BY name ASC
+      SELECT u.id, u.name, u.email, u.class, u.section, u.roll_number, u.school_id, u.created_at,
+             u.id_card_photo,
+             COALESCE(t.blocked_posts_count, 0) as blocked_posts_count
+      FROM users u
+      LEFT JOIN trust_signals t ON u.id = t.user_id
+      WHERE u.role = 'student' AND u.approval_status = 'approved'
+      ORDER BY u.name ASC
     `);
 
         res.json({ students });
@@ -88,10 +200,13 @@ router.get('/students/approved', async (req, res) => {
 router.get('/students/rejected', async (req, res) => {
     try {
         const students = await query(`
-      SELECT id, name, email, class, section, roll_number, school_id, created_at
-      FROM users
-      WHERE role = 'student' AND approval_status = 'rejected'
-      ORDER BY created_at DESC
+      SELECT u.id, u.name, u.email, u.class, u.section, u.roll_number, u.school_id, u.created_at,
+             u.id_card_photo,
+             COALESCE(t.blocked_posts_count, 0) as blocked_posts_count
+      FROM users u
+      LEFT JOIN trust_signals t ON u.id = t.user_id
+      WHERE u.role = 'student' AND u.approval_status = 'rejected'
+      ORDER BY u.created_at DESC
     `);
 
         res.json({ students });

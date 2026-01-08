@@ -63,12 +63,37 @@ export const AuthProvider = ({ children }) => {
         setUser(null);
     };
 
+    const updateProfilePicture = async (file) => {
+        try {
+            const formData = new FormData();
+            formData.append('profilePicture', file);
+
+            const response = await apiClient.put('/auth/profile-picture', formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            });
+
+            const updatedUser = response.data.user;
+            localStorage.setItem('user', JSON.stringify(updatedUser));
+            setUser(updatedUser);
+
+            return { success: true, user: updatedUser };
+        } catch (error) {
+            return {
+                success: false,
+                error: error.response?.data?.error || 'Failed to update profile picture'
+            };
+        }
+    };
+
     const value = {
         user,
         loading,
         login,
         register,
         logout,
+        updateProfilePicture,
         isAuthenticated: !!user,
         isStudent: user?.role === 'student',
         isTeacher: user?.role === 'teacher',
@@ -76,3 +101,4 @@ export const AuthProvider = ({ children }) => {
 
     return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };
+

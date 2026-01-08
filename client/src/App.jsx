@@ -4,11 +4,13 @@ import ProtectedRoute from './components/ProtectedRoute';
 
 // Pages
 import Login from './pages/Login';
+import Signup from './pages/Signup';
 import StudentDashboard from './pages/student/Dashboard';
 import Feed from './pages/student/Feed';
 import Calendar from './pages/student/Calendar';
 import Announcements from './pages/student/Announcements';
 import TeacherDashboard from './pages/teacher/Dashboard';
+import TeacherFeed from './pages/teacher/Feed';
 import StudentManagement from './pages/teacher/StudentManagement';
 import ModerationPanel from './pages/teacher/ModerationPanel';
 import CalendarManagement from './pages/teacher/CalendarManagement';
@@ -23,6 +25,10 @@ function AppRoutes() {
       <Route
         path="/login"
         element={isAuthenticated ? <Navigate to={isStudent ? '/student' : '/teacher'} replace /> : <Login />}
+      />
+      <Route
+        path="/signup"
+        element={isAuthenticated ? <Navigate to={isStudent ? '/student' : '/teacher'} replace /> : <Signup />}
       />
 
       {/* Student Routes */}
@@ -65,6 +71,14 @@ function AppRoutes() {
         element={
           <ProtectedRoute requireRole="teacher">
             <TeacherDashboard />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/teacher/feed"
+        element={
+          <ProtectedRoute requireRole="teacher">
+            <TeacherFeed />
           </ProtectedRoute>
         }
       />

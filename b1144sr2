@@ -1,0 +1,75 @@
+[0] (500,556)<div  />
+	[1] (146,38)<a class='navbar-brand' href='/' />
+		[2] (146,38)<span >🧥 Clothshare />
+	[3] (428,37)<a class='navbar-link ' href='/dashboard'>My Claims />
+	[4] (530,37)<a class='navbar-link ' href='/catalogue'>Browse Donations />
+	[5] (789,38)<button aria-label='Notifications' class='btn btn-ghost btn-icon'>🔔 />
+		[6] (796,22)<span >1 />
+	[7] (828,38)<a class='btn btn-ghost btn-sm' href='/profile'>City />
+	[8] (882,38)<button class='btn btn-secondary btn-sm'>Logout />
+	Recommended for
+	Winter
+	Based on the time of year, these items are most needed right now.
+	[9] (812,80)<a class='btn btn-outline' href='/catalogue?search=winter'>View More
+Winter
+Items />
+	[10] (202,354)<a class='card donation-card' href='/donation/11' />
+		[11] (202,285)<div  />
+			[12] (170,180)<img  />
+			[13] (259,194)<div >available />
+		[14] (202,475)<div  />
+			[15] (202,437)<div >winterwear
+•
+L />
+			[16] (202,473)<h3 >Gray Fleece Hoodie />
+			[17] (202,510)<div  />
+				[18] (150,510)<span >📍
+Mumbai />
+	[19] (401,354)<a class='card donation-card' href='/donation/1' />
+		[20] (401,285)<div  />
+			[21] (370,180)<img  />
+			[22] (457,194)<div >available />
+		[23] (401,475)<div  />
+			[24] (401,437)<div >winterwear
+•
+L />
+			[25] (401,473)<h3 >Warm Winter Jacket />
+			[26] (401,510)<div  />
+				[27] (349,510)<span >📍
+Mumbai />
+	[28] (599,354)<a class='card donation-card' href='/donation/12' />
+		[29] (599,285)<div  />
+			[30] (581,180)<img  />
+			[31] (656,194)<div >available />
+		[32] (599,475)<div  />
+			[33] (599,437)<div >winterwear
+•
+XL />
+			[34] (599,473)<h3 >Heavy Black Winter Coat />
+			[35] (599,510)<div  />
+				[36] (540,510)<span >📍
+Delhi />
+	[37] (798,354)<a class='card donation-card' href='/donation/13' />
+		[38] (798,285)<div  />
+			[39] (773,180)<img  />
+			[40] (855,194)<div >available />
+		[41] (798,475)<div  />
+			[42] (798,437)<div >accessories
+•
+One Size />
+			[43] (798,473)<h3 >Handmade Wool Scarf />
+			[44] (798,510)<div  />
+				[45] (751,510)<span >📍
+Bangalore />
+	[46] (202,773)<a class='card donation-card' href='/donation/14' />
+		[47] (202,705)<div  />
+			[48] (171,600)<img  />
+			[49] (259,613)<div >available />
+		[50] (202,894)<div  />
+			[51] (202,857)<div >accessories
+•
+M />
+			[52] (202,892)<h3 >Thick Winter Gloves />
+			[53] (202,929)<div  />
+				[54] (150,929)<span >📍
+Mumbai />

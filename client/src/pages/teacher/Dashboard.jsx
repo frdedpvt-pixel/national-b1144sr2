@@ -78,6 +78,9 @@ export default function TeacherDashboard() {
 
                 <h3 className="mb-md">Quick Actions</h3>
                 <div className="grid grid-3">
+                    <a href="/teacher/feed" className="btn btn-secondary btn-large" style={{ textDecoration: 'none' }}>
+                        📱 School Feed
+                    </a>
                     <a href="/teacher/students" className="btn btn-secondary btn-large" style={{ textDecoration: 'none' }}>
                         👥 Manage Students
                     </a>

@@ -2,6 +2,8 @@ import express from 'express';
 import { query, queryOne, run } from '../database/db.js';
 import { authenticate, requireApproved, requireRole } from '../middleware/auth.js';
 import { moderatePost, getModerationMessage } from '../services/moderation.js';
+import upload from '../middleware/upload.js';
+import fs from 'fs';
 
 const router = express.Router();
 
@@ -96,31 +98,50 @@ router.get('/feed', async (req, res) => {
 
 /**
  * POST /api/student/post
- * Create a new post (with AI moderation)
+ * Create a new post (with AI moderation and file upload)
+ * Students posts go through AI moderation
+ * Images are NOT analyzed by AI - only text content is moderated
  */
-router.post('/post', async (req, res) => {
+router.post('/post', upload.single('image'), async (req, res) => {
     try {
-        const { content, image, tag } = req.body;
+        const { content, tag } = req.body;
 
+        // Validate required fields
         if (!content || !tag) {
+            // Delete uploaded file if validation fails
+            if (req.file) {
+                fs.unlinkSync(req.file.path);
+            }
             return res.status(400).json({ error: 'Content and tag are required' });
         }
 
         // Validate tag
-        const validTags = ['#Academics', '#Sports', '#Art', '#Fest'];
+        const validTags = ['#Academics', '#Sports', '#Art', '#Fest', '#Help'];
         if (!validTags.includes(tag)) {
+            // Delete uploaded file if validation fails
+            if (req.file) {
+                fs.unlinkSync(req.file.path);
+            }
             return res.status(400).json({ error: 'Invalid tag' });
         }
 
-        // AI Moderation
+        // Get image path (if uploaded)
+        const imagePath = req.file ? `/uploads/${req.file.filename}` : null;
+
+        // AI Moderation (TEXT ONLY - images are never analyzed)
         const moderation = moderatePost(content);
 
         if (!moderation.approved) {
-            // Block the post
+            // Text failed moderation - delete uploaded image and block the post
+            if (req.file) {
+                fs.unlinkSync(req.file.path);
+            }
+
+            // Store blocked post in database (without image since it was deleted)
             await run(
                 `INSERT INTO posts (user_id, content, image, tag, moderation_status, moderation_reason)
-         VALUES (?, ?, ?, ?, 'blocked', ?)`,
-                [req.user.id, content, image, tag, moderation.reason]
+         VALUES (?, ?, NULL, ?, 'blocked', ?)`,
+                [req.user.id, content, tag, moderation.reason]
             );
 
             // Increment trust signal
@@ -137,11 +158,11 @@ router.post('/post', async (req, res) => {
             });
         }
 
-        // Post is approved - publish immediately
+        // Text is approved - publish post with image (if uploaded)
         const result = await run(
             `INSERT INTO posts (user_id, content, image, tag, moderation_status)
        VALUES (?, ?, ?, ?, 'approved')`,
-            [req.user.id, content, image, tag]
+            [req.user.id, content, imagePath, tag]
         );
 
         res.status(201).json({
@@ -150,6 +171,16 @@ router.post('/post', async (req, res) => {
         });
     } catch (error) {
         console.error('Post creation error:', error);
+
+        // Delete uploaded file if error occurs
+        if (req.file) {
+            try {
+                fs.unlinkSync(req.file.path);
+            } catch (unlinkError) {
+                console.error('Failed to delete uploaded file:', unlinkError);
+            }
+        }
+
         res.status(500).json({ error: 'Failed to create post' });
     }
 });

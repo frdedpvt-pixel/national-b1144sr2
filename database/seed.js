@@ -4,13 +4,16 @@ import bcrypt from 'bcryptjs';
 // Initialize database first
 await initializeDatabase();
 
-// Clear existing data
-console.log('🗑️  Clearing existing data...');
-run(`DELETE FROM trust_signals`, []);
-run(`DELETE FROM announcements`, []);
-run(`DELETE FROM events`, []);
-run(`DELETE FROM posts`, []);
-run(`DELETE FROM users`, []);
+// Clear existing data and drop tables to force schema recreation
+console.log('🗑️  Clearing existing data and recreating schema...');
+run(`DROP TABLE IF EXISTS trust_signals`, []);
+run(`DROP TABLE IF EXISTS announcements`, []);
+run(`DROP TABLE IF EXISTS events`, []);
+run(`DROP TABLE IF EXISTS posts`, []);
+run(`DROP TABLE IF EXISTS users`, []);
+
+// Reinitialize to create tables with new schema
+await initializeDatabase();
 
 // Hash password helper
 const hashPassword = (password) => bcrypt.hashSync(password, 10);

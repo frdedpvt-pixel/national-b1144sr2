@@ -91,6 +91,32 @@ export default function StudentManagement() {
                                     🎫 Roll No: {student.roll_number} | ID: {student.school_id}
                                 </p>
 
+                                {/* Display ID Card Photo */}
+                                {student.id_card_photo && (
+                                    <div className="mt-md">
+                                        <p className="text-muted" style={{ fontSize: '0.875rem', marginBottom: '0.5rem' }}>
+                                            📸 School ID Card:
+                                        </p>
+                                        <img
+                                            src={`http://localhost:5001${student.id_card_photo}`}
+                                            alt="Student ID Card"
+                                            style={{
+                                                maxWidth: '100%',
+                                                maxHeight: '200px',
+                                                borderRadius: '8px',
+                                                border: '2px solid var(--color-border)',
+                                                objectFit: 'contain'
+                                            }}
+                                        />
+                                    </div>
+                                )}
+
+                                {student.blocked_posts_count > 0 && (
+                                    <div className="badge badge-error mt-sm">
+                                        ⚠️ {student.blocked_posts_count} Flagged Posts
+                                    </div>
+                                )}
+
                                 {tab === 'pending' && (
                                     <div className="flex gap-sm mt-md">
                                         <button

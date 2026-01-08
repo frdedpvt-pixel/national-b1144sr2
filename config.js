@@ -29,7 +29,8 @@ export const config = {
     '#Academics',
     '#Sports',
     '#Art',
-    '#Fest'
+    '#Fest',
+    '#Help'
   ],
 
   // Event Types and Colors

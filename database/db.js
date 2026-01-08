@@ -11,35 +11,35 @@ let db = null;
 
 // Initialize SQL.js
 export async function getDatabase() {
-    if (db) return db;
+  if (db) return db;
 
-    const SQL = await initSqlJs();
+  const SQL = await initSqlJs();
 
-    // Load existing database or create new one
-    if (fs.existsSync(dbPath)) {
-        const buffer = fs.readFileSync(dbPath);
-        db = new SQL.Database(buffer);
-    } else {
-        db = new SQL.Database();
-    }
+  // Load existing database or create new one
+  if (fs.existsSync(dbPath)) {
+    const buffer = fs.readFileSync(dbPath);
+    db = new SQL.Database(buffer);
+  } else {
+    db = new SQL.Database();
+  }
 
-    return db;
+  return db;
 }
 
 // Save database to file
 export function saveDatabase() {
-    if (db) {
-        const data = db.export();
-        fs.writeFileSync(dbPath, data);
-    }
+  if (db) {
+    const data = db.export();
+    fs.writeFileSync(dbPath, data);
+  }
 }
 
 // Initialize database schema
 export async function initializeDatabase() {
-    db = await getDatabase();
+  db = await getDatabase();
 
-    // Users table
-    db.run(`
+  // Users table
+  db.run(`
     CREATE TABLE IF NOT EXISTS users (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       name TEXT NOT NULL,
@@ -52,18 +52,19 @@ export async function initializeDatabase() {
       roll_number TEXT,
       school_id TEXT,
       profile_picture TEXT DEFAULT 'https://api.dicebear.com/7.x/avataaars/svg?seed=default',
+      id_card_photo TEXT,
       created_at DATETIME DEFAULT CURRENT_TIMESTAMP
     )
   `);
 
-    // Posts table
-    db.run(`
+  // Posts table
+  db.run(`
     CREATE TABLE IF NOT EXISTS posts (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       user_id INTEGER NOT NULL,
       content TEXT NOT NULL,
       image TEXT,
-      tag TEXT NOT NULL CHECK(tag IN ('#Academics', '#Sports', '#Art', '#Fest')),
+      tag TEXT NOT NULL CHECK(tag IN ('#Academics', '#Sports', '#Art', '#Fest', '#Help')),
       moderation_status TEXT DEFAULT 'approved' CHECK(moderation_status IN ('pending', 'approved', 'blocked', 'rejected')),
       moderation_reason TEXT,
       created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
@@ -71,8 +72,8 @@ export async function initializeDatabase() {
     )
   `);
 
-    // Events table
-    db.run(`
+  // Events table
+  db.run(`
     CREATE TABLE IF NOT EXISTS events (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       title TEXT NOT NULL,
@@ -85,8 +86,8 @@ export async function initializeDatabase() {
     )
   `);
 
-    // Announcements table
-    db.run(`
+  // Announcements table
+  db.run(`
     CREATE TABLE IF NOT EXISTS announcements (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       title TEXT NOT NULL,
@@ -97,8 +98,8 @@ export async function initializeDatabase() {
     )
   `);
 
-    // Trust signals table
-    db.run(`
+  // Trust signals table
+  db.run(`
     CREATE TABLE IF NOT EXISTS trust_signals (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       user_id INTEGER UNIQUE NOT NULL,
@@ -107,50 +108,50 @@ export async function initializeDatabase() {
     )
   `);
 
-    saveDatabase();
-    console.log('✅ Database schema initialized');
+  saveDatabase();
+  console.log('✅ Database schema initialized');
 }
 
 // Helper functions for querying
 export function query(sql, params = []) {
-    try {
-        const stmt = db.prepare(sql);
-        stmt.bind(params);
+  try {
+    const stmt = db.prepare(sql);
+    stmt.bind(params);
 
-        const results = [];
-        while (stmt.step()) {
-            const row = stmt.getAsObject();
-            results.push(row);
-        }
-        stmt.free();
-
-        return results;
-    } catch (error) {
-        console.error('Query error:', error);
-        throw error;
+    const results = [];
+    while (stmt.step()) {
+      const row = stmt.getAsObject();
+      results.push(row);
     }
+    stmt.free();
+
+    return results;
+  } catch (error) {
+    console.error('Query error:', error);
+    throw error;
+  }
 }
 
 export function queryOne(sql, params = []) {
-    const results = query(sql, params);
-    return results.length > 0 ? results[0] : null;
+  const results = query(sql, params);
+  return results.length > 0 ? results[0] : null;
 }
 
 export function run(sql, params = []) {
-    try {
-        db.run(sql, params);
-        saveDatabase();
+  try {
+    db.run(sql, params);
+    saveDatabase();
 
-        // Get last insert ID
-        const result = queryOne('SELECT last_insert_rowid() as id');
-        return {
-            lastInsertRowid: result ? result.id : null,
-            changes: 1 // sql.js doesn't provide this, so we assume success
-        };
-    } catch (error) {
-        console.error('Run error:', error);
-        throw error;
-    }
+    // Get last insert ID
+    const result = queryOne('SELECT last_insert_rowid() as id');
+    return {
+      lastInsertRowid: result ? result.id : null,
+      changes: 1 // sql.js doesn't provide this, so we assume success
+    };
+  } catch (error) {
+    console.error('Run error:', error);
+    throw error;
+  }
 }
 
 export default { getDatabase, saveDatabase, initializeDatabase, query, queryOne, run };
