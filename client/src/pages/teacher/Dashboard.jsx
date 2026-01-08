@@ -90,6 +90,13 @@ export default function TeacherDashboard() {
                     <a href="/teacher/announcements/create" className="btn btn-secondary btn-large" style={{ textDecoration: 'none' }}>
                         📢 Create Announcement
                     </a>
+                    <button
+                        className="btn btn-primary btn-large"
+                        onClick={() => window.open('http://localhost:5000/hprproj/index.html', '_blank')}
+                        style={{ cursor: 'pointer' }}
+                    >
+                        📚 Teacher Help
+                    </button>
                 </div>
             </div>
         </>

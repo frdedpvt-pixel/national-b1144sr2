@@ -1,0 +1,97 @@
+[
+    {
+        "student_id": "S201",
+        "school": "Riverside High",
+        "age": 16,
+        "grade": "11th",
+        "class": "A",
+        "gender": "F",
+        "mastery": {
+            "Numbers": 0.92,
+            "Addition": 0.88,
+            "Subtraction": 0.85,
+            "Multiplication": 0.78,
+            "Division": 0.70,
+            "Fractions": 0.75,
+            "Decimals": 0.68,
+            "Algebra": 0.55,
+            "Equations": 0.42
+        }
+    },
+    {
+        "student_id": "S202",
+        "school": "Mountain View Academy",
+        "age": 14,
+        "grade": "9th",
+        "class": "B",
+        "gender": "M",
+        "mastery": {
+            "Numbers": 0.80,
+            "Addition": 0.75,
+            "Subtraction": 0.72,
+            "Multiplication": 0.58,
+            "Division": 0.45,
+            "Fractions": 0.50,
+            "Decimals": 0.38,
+            "Algebra": 0.30,
+            "Equations": 0.18
+        }
+    },
+    {
+        "student_id": "S203",
+        "school": "Coastal Prep",
+        "age": 17,
+        "grade": "12th",
+        "class": "A",
+        "gender": "F",
+        "mastery": {
+            "Numbers": 0.98,
+            "Addition": 0.96,
+            "Subtraction": 0.94,
+            "Multiplication": 0.90,
+            "Division": 0.85,
+            "Fractions": 0.88,
+            "Decimals": 0.82,
+            "Algebra": 0.78,
+            "Equations": 0.72
+        }
+    },
+    {
+        "student_id": "S204",
+        "school": "Riverside High",
+        "age": 15,
+        "grade": "10th",
+        "class": "B",
+        "gender": "M",
+        "mastery": {
+            "Numbers": 0.85,
+            "Addition": 0.80,
+            "Subtraction": 0.78,
+            "Multiplication": 0.65,
+            "Division": 0.55,
+            "Fractions": 0.60,
+            "Decimals": 0.50,
+            "Algebra": 0.40,
+            "Equations": 0.28
+        }
+    },
+    {
+        "student_id": "S205",
+        "school": "Mountain View Academy",
+        "age": 14,
+        "grade": "9th",
+        "class": "A",
+        "gender": "F",
+        "mastery": {
+            "Numbers": 0.90,
+            "Addition": 0.88,
+            "Subtraction": 0.85,
+            "Multiplication": 0.75,
+            "Division": 0.68,
+            "Fractions": 0.72,
+            "Decimals": 0.65,
+            "Algebra": 0.52,
+            "Equations": 0.38
+        }
+    }
+]

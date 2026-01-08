@@ -1,0 +1,162 @@
+[
+    {
+        "student_id": "ADV001",
+        "school": "Tech Academy",
+        "age": 15,
+        "grade": "10th",
+        "gender": "F",
+        "learning_style": "visual",
+        "study_hours_per_week": 12,
+        "mastery": {
+            "Numbers": 0.94,
+            "Addition": 0.90,
+            "Subtraction": 0.88,
+            "Multiplication": 0.75,
+            "Division": 0.62,
+            "Fractions": 0.68,
+            "Decimals": 0.55,
+            "Algebra": 0.42,
+            "Equations": 0.28
+        }
+    },
+    {
+        "student_id": "ADV002",
+        "school": "Creative Learning Center",
+        "age": 14,
+        "grade": "9th",
+        "gender": "M",
+        "learning_style": "kinesthetic",
+        "study_hours_per_week": 8,
+        "mastery": {
+            "Numbers": 0.85,
+            "Addition": 0.80,
+            "Subtraction": 0.78,
+            "Multiplication": 0.60,
+            "Division": 0.45,
+            "Fractions": 0.52,
+            "Decimals": 0.38,
+            "Algebra": 0.25,
+            "Equations": 0.15
+        }
+    },
+    {
+        "student_id": "ADV003",
+        "school": "Honors Institute",
+        "age": 17,
+        "grade": "12th",
+        "gender": "F",
+        "learning_style": "auditory",
+        "study_hours_per_week": 15,
+        "mastery": {
+            "Numbers": 0.98,
+            "Addition": 0.96,
+            "Subtraction": 0.95,
+            "Multiplication": 0.92,
+            "Division": 0.88,
+            "Fractions": 0.90,
+            "Decimals": 0.85,
+            "Algebra": 0.78,
+            "Equations": 0.72
+        }
+    },
+    {
+        "student_id": "ADV004",
+        "school": "Community School",
+        "age": 12,
+        "grade": "7th",
+        "gender": "M",
+        "learning_style": "visual",
+        "study_hours_per_week": 6,
+        "mastery": {
+            "Numbers": 0.80,
+            "Addition": 0.75,
+            "Subtraction": 0.72,
+            "Multiplication": 0.55,
+            "Division": 0.38,
+            "Fractions": 0.48,
+            "Decimals": 0.32,
+            "Algebra": 0.22,
+            "Equations": 0.12
+        }
+    },
+    {
+        "student_id": "ADV005",
+        "school": "STEM Academy",
+        "age": 16,
+        "grade": "11th",
+        "gender": "F",
+        "learning_style": "reading/writing",
+        "study_hours_per_week": 14,
+        "mastery": {
+            "Numbers": 0.92,
+            "Addition": 0.88,
+            "Subtraction": 0.86,
+            "Multiplication": 0.78,
+            "Division": 0.70,
+            "Fractions": 0.75,
+            "Decimals": 0.65,
+            "Algebra": 0.58,
+            "Equations": 0.45
+        }
+    },
+    {
+        "student_id": "ADV006",
+        "school": "Alternative Learning",
+        "age": 13,
+        "grade": "8th",
+        "gender": "M",
+        "learning_style": "kinesthetic",
+        "study_hours_per_week": 5,
+        "mastery": {
+            "Numbers": 0.78,
+            "Addition": 0.72,
+            "Subtraction": 0.70,
+            "Multiplication": 0.50,
+            "Division": 0.32,
+            "Fractions": 0.42,
+            "Decimals": 0.28,
+            "Algebra": 0.18,
+            "Equations": 0.08
+        }
+    },
+    {
+        "student_id": "ADV007",
+        "school": "Tech Academy",
+        "age": 15,
+        "grade": "10th",
+        "gender": "F",
+        "learning_style": "visual",
+        "study_hours_per_week": 10,
+        "mastery": {
+            "Numbers": 0.88,
+            "Addition": 0.85,
+            "Subtraction": 0.82,
+            "Multiplication": 0.68,
+            "Division": 0.55,
+            "Fractions": 0.62,
+            "Decimals": 0.48,
+            "Algebra": 0.35,
+            "Equations": 0.25
+        }
+    },
+    {
+        "student_id": "ADV008",
+        "school": "Honors Institute",
+        "age": 16,
+        "grade": "11th",
+        "gender": "M",
+        "learning_style": "auditory",
+        "study_hours_per_week": 13,
+        "mastery": {
+            "Numbers": 0.95,
+            "Addition": 0.92,
+            "Subtraction": 0.90,
+            "Multiplication": 0.85,
+            "Division": 0.78,
+            "Fractions": 0.82,
+            "Decimals": 0.72,
+            "Algebra": 0.65,
+            "Equations": 0.55
+        }
+    }
+]

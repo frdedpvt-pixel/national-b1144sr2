@@ -1,0 +1,1002 @@
+[
+  {
+    "student_id": "SYN0001",
+    "school": "Washington Middle",
+    "age": 20,
+    "grade": "9th",
+    "gender": "M",
+    "learning_style": "reading/writing",
+    "study_hours_per_week": 11,
+    "mastery": {
+      "Numbers": 0.98,
+      "Addition": 0.98,
+      "Subtraction": 0.98,
+      "Multiplication": 0.98,
+      "Division": 0.754048045259492,
+      "Fractions": 0.9738939611470033,
+      "Decimals": 0.7942651293291805,
+      "Algebra": 0.6165224473120497,
+      "Equations": 0.6568217744472951
+    }
+  },
+  {
+    "student_id": "SYN0002",
+    "school": "STEM Academy",
+    "age": 20,
+    "grade": "10th",
+    "gender": "F",
+    "learning_style": "auditory",
+    "study_hours_per_week": 8,
+    "mastery": {
+      "Numbers": 0.98,
+      "Addition": 0.8143232945980146,
+      "Subtraction": 0.98,
+      "Multiplication": 0.6450912831554311,
+      "Division": 0.6711471846766606,
+      "Fractions": 0.7456588520173371,
+      "Decimals": 0.6262425915527948,
+      "Algebra": 0.4536733275471001,
+      "Equations": 0.41050558115294755
+    }
+  },
+  {
+    "student_id": "SYN0003",
+    "school": "Lincoln High",
+    "age": 22,
+    "grade": "11th",
+    "gender": "M",
+    "learning_style": "reading/writing",
+    "study_hours_per_week": 8,
+    "mastery": {
+      "Numbers": 0.7782253339907493,
+      "Addition": 0.8414496762624701,
+      "Subtraction": 0.8641376770060686,
+      "Multiplication": 0.7241347930817376,
+      "Division": 0.6412985339153954,
+      "Fractions": 0.5615622677177395,
+      "Decimals": 0.5781929126195651,
+      "Algebra": 0.4532233985438538,
+      "Equations": 0.2792996481811152
+    }
+  },
+  {
+    "student_id": "SYN0004",
+    "school": "Jefferson Academy",
+    "age": 19,
+    "grade": "10th",
+    "gender": "M",
+    "learning_style": "reading/writing",
+    "study_hours_per_week": 9,
+    "mastery": {
+      "Numbers": 0.8322808779960645,
+      "Addition": 0.879300559661487,
+      "Subtraction": 0.8341794328912275,
+      "Multiplication": 0.6212465642539697,
+      "Division": 0.5283964202886916,
+      "Fractions": 0.6695847140949074,
+      "Decimals": 0.5623323194700338,
+      "Algebra": 0.23193338580975872,
+      "Equations": 0.13214014859509587
+    }
+  },
+  {
+    "student_id": "SYN0005",
+    "school": "Tech Academy",
+    "age": 17,
+    "grade": "6th",
+    "gender": "M",
+    "learning_style": "visual",
+    "study_hours_per_week": 10,
+    "mastery": {
+      "Numbers": 0.9382135085238515,
+      "Addition": 0.9222200523329179,
+      "Subtraction": 0.9288742459302668,
+      "Multiplication": 0.7556250246368867,
+      "Division": 0.8810592369211889,
+      "Fractions": 0.6627729466715926,
+      "Decimals": 0.5412908837020548,
+      "Algebra": 0.6235413215307515,
+      "Equations": 0.5251878482534702
+    }
+  },
+  {
+    "student_id": "SYN0006",
+    "school": "Roosevelt Elementary",
+    "age": 20,
+    "grade": "10th",
+    "gender": "M",
+    "learning_style": "kinesthetic",
+    "study_hours_per_week": 10,
+    "mastery": {
+      "Numbers": 0.98,
+      "Addition": 0.98,
+      "Subtraction": 0.98,
+      "Multiplication": 0.98,
+      "Division": 0.8323410105667908,
+      "Fractions": 0.782420834561998,
+      "Decimals": 0.6632282014295621,
+      "Algebra": 0.6912679734129986,
+      "Equations": 0.7000946905231313
+    }
+  },
+  {
+    "student_id": "SYN0007",
+    "school": "STEM Academy",
+    "age": 22,
+    "grade": "12th",
+    "gender": "F",
+    "learning_style": "reading/writing",
+    "study_hours_per_week": 11,
+    "mastery": {
+      "Numbers": 0.7240654490815057,
+      "Addition": 0.6296212863065065,
+      "Subtraction": 0.7427039191580775,
+      "Multiplication": 0.6608832508762174,
+      "Division": 0.37847429107343195,
+      "Fractions": 0.3906265851781545,
+      "Decimals": 0.25443783150649896,
+      "Algebra": 0.11223367331571452,
+      "Equations": 0.12398246807966734
+    }
+  },
+  {
+    "student_id": "SYN0008",
+    "school": "Kennedy Charter",
+    "age": 22,
+    "grade": "11th",
+    "gender": "F",
+    "learning_style": "auditory",
+    "study_hours_per_week": 11,
+    "mastery": {
+      "Numbers": 0.8920662371519581,
+      "Addition": 0.9759946303060282,
+      "Subtraction": 0.8579139071097488,
+      "Multiplication": 0.6349702224508513,
+      "Division": 0.7189299236638055,
+      "Fractions": 0.6671037632033288,
+      "Decimals": 0.743412964400437,
+      "Algebra": 0.5190713324645155,
+      "Equations": 0.4723641643730185
+    }
+  },
+  {
+    "student_id": "SYN0009",
+    "school": "Adams High",
+    "age": 22,
+    "grade": "12th",
+    "gender": "F",
+    "learning_style": "reading/writing",
+    "study_hours_per_week": 9,
+    "mastery": {
+      "Numbers": 0.8976034075911428,
+      "Addition": 0.8161614127047481,
+      "Subtraction": 0.8250031112621257,
+      "Multiplication": 0.7056258179164749,
+      "Division": 0.5948185122547924,
+      "Fractions": 0.5802317034009405,
+      "Decimals": 0.671569623226917,
+      "Algebra": 0.4851414445310969,
+      "Equations": 0.40044112962650286
+    }
+  },
+  {
+    "student_id": "SYN0010",
+    "school": "Jefferson Academy",
+    "age": 16,
+    "grade": "7th",
+    "gender": "M",
+    "learning_style": "auditory",
+    "study_hours_per_week": 5,
+    "mastery": {
+      "Numbers": 0.6926557888636038,
+      "Addition": 0.8478251941387352,
+      "Subtraction": 0.6611750573766298,
+      "Multiplication": 0.577179180904836,
+      "Division": 0.4354660481052631,
+      "Fractions": 0.489079012641678,
+      "Decimals": 0.4109318926139169,
+      "Algebra": 0.3447765366312716,
+      "Equations": 0.2249600068450874
+    }
+  },
+  {
+    "student_id": "SYN0011",
+    "school": "Lincoln High",
+    "age": 23,
+    "grade": "12th",
+    "gender": "M",
+    "learning_style": "visual",
+    "study_hours_per_week": 3,
+    "mastery": {
+      "Numbers": 0.98,
+      "Addition": 0.98,
+      "Subtraction": 0.9281927159722548,
+      "Multiplication": 0.8659801443539333,
+      "Division": 0.7496162624012938,
+      "Fractions": 0.8107180032597051,
+      "Decimals": 0.6032894770681316,
+      "Algebra": 0.6122102532612435,
+      "Equations": 0.506363933756951
+    }
+  },
+  {
+    "student_id": "SYN0012",
+    "school": "Adams High",
+    "age": 17,
+    "grade": "7th",
+    "gender": "M",
+    "learning_style": "auditory",
+    "study_hours_per_week": 6,
+    "mastery": {
+      "Numbers": 0.7652254231777544,
+      "Addition": 0.738732173092461,
+      "Subtraction": 0.6636698378558835,
+      "Multiplication": 0.6777285421247928,
+      "Division": 0.4480095195946615,
+      "Fractions": 0.5309624371861207,
+      "Decimals": 0.45346240239257674,
+      "Algebra": 0.3844838250691227,
+      "Equations": 0.32892645459195974
+    }
+  },
+  {
+    "student_id": "SYN0013",
+    "school": "Jefferson Academy",
+    "age": 20,
+    "grade": "9th",
+    "gender": "M",
+    "learning_style": "auditory",
+    "study_hours_per_week": 10,
+    "mastery": {
+      "Numbers": 0.98,
+      "Addition": 0.98,
+      "Subtraction": 0.9412456019349236,
+      "Multiplication": 0.9547214632996482,
+      "Division": 0.9377554792467562,
+      "Fractions": 0.6495864551625821,
+      "Decimals": 0.695272136315827,
+      "Algebra": 0.6930671313581078,
+      "Equations": 0.6733993116393329
+    }
+  },
+  {
+    "student_id": "SYN0014",
+    "school": "Roosevelt Elementary",
+    "age": 19,
+    "grade": "10th",
+    "gender": "F",
+    "learning_style": "reading/writing",
+    "study_hours_per_week": 10,
+    "mastery": {
+      "Numbers": 0.9733041106972279,
+      "Addition": 0.98,
+      "Subtraction": 0.895217965553966,
+      "Multiplication": 0.7679607559393331,
+      "Division": 0.53377136044848,
+      "Fractions": 0.8533861588051579,
+      "Decimals": 0.5869782320608006,
+      "Algebra": 0.5467102079008743,
+      "Equations": 0.5838005641613979
+    }
+  },
+  {
+    "student_id": "SYN0015",
+    "school": "Jefferson Academy",
+    "age": 20,
+    "grade": "11th",
+    "gender": "F",
+    "learning_style": "kinesthetic",
+    "study_hours_per_week": 11,
+    "mastery": {
+      "Numbers": 0.8806990923413911,
+      "Addition": 0.7819589406143584,
+      "Subtraction": 0.7758748065308374,
+      "Multiplication": 0.6111173721394121,
+      "Division": 0.7196571585803881,
+      "Fractions": 0.4990776855745247,
+      "Decimals": 0.7286541019657264,
+      "Algebra": 0.33593863895463416,
+      "Equations": 0.5181636800593409
+    }
+  },
+  {
+    "student_id": "SYN0016",
+    "school": "Tech Academy",
+    "age": 20,
+    "grade": "10th",
+    "gender": "M",
+    "learning_style": "visual",
+    "study_hours_per_week": 6,
+    "mastery": {
+      "Numbers": 0.9515481895584291,
+      "Addition": 0.8496771513255048,
+      "Subtraction": 0.7391775722600759,
+      "Multiplication": 0.6559479167019509,
+      "Division": 0.6550582828575982,
+      "Fractions": 0.6303773165273477,
+      "Decimals": 0.3984730155028413,
+      "Algebra": 0.501263062675929,
+      "Equations": 0.29295274840966656
+    }
+  },
+  {
+    "student_id": "SYN0017",
+    "school": "Adams High",
+    "age": 20,
+    "grade": "10th",
+    "gender": "M",
+    "learning_style": "kinesthetic",
+    "study_hours_per_week": 12,
+    "mastery": {
+      "Numbers": 0.7194252707403154,
+      "Addition": 0.701675611979182,
+      "Subtraction": 0.6567262429541068,
+      "Multiplication": 0.6506741441854678,
+      "Division": 0.4980257975168006,
+      "Fractions": 0.5692755943840269,
+      "Decimals": 0.35028127208154686,
+      "Algebra": 0.44903266660758556,
+      "Equations": 0.2596094427121092
+    }
+  },
+  {
+    "student_id": "SYN0018",
+    "school": "Jefferson Academy",
+    "age": 21,
+    "grade": "11th",
+    "gender": "M",
+    "learning_style": "visual",
+    "study_hours_per_week": 3,
+    "mastery": {
+      "Numbers": 0.877074050006696,
+      "Addition": 0.7704956077592877,
+      "Subtraction": 0.8754005282695759,
+      "Multiplication": 0.7596877537559205,
+      "Division": 0.7214528263376283,
+      "Fractions": 0.6194392904461015,
+      "Decimals": 0.4957895121153556,
+      "Algebra": 0.531462161507169,
+      "Equations": 0.4169507004609605
+    }
+  },
+  {
+    "student_id": "SYN0019",
+    "school": "Madison Prep",
+    "age": 20,
+    "grade": "9th",
+    "gender": "M",
+    "learning_style": "visual",
+    "study_hours_per_week": 8,
+    "mastery": {
+      "Numbers": 0.98,
+      "Addition": 0.98,
+      "Subtraction": 0.98,
+      "Multiplication": 0.792047779249708,
+      "Division": 0.9292544926624808,
+      "Fractions": 0.9304737439272911,
+      "Decimals": 0.7602880529107466,
+      "Algebra": 0.5704121090401988,
+      "Equations": 0.6544091207050852
+    }
+  },
+  {
+    "student_id": "SYN0020",
+    "school": "Roosevelt Elementary",
+    "age": 18,
+    "grade": "7th",
+    "gender": "M",
+    "learning_style": "auditory",
+    "study_hours_per_week": 7,
+    "mastery": {
+      "Numbers": 0.8121745893626451,
+      "Addition": 0.774435401979317,
+      "Subtraction": 0.7284660812647176,
+      "Multiplication": 0.6380931450419401,
+      "Division": 0.6077342489358829,
+      "Fractions": 0.5569318649493119,
+      "Decimals": 0.5446944984334094,
+      "Algebra": 0.4209468241776309,
+      "Equations": 0.3335935858933647
+    }
+  },
+  {
+    "student_id": "SYN0021",
+    "school": "Lincoln High",
+    "age": 23,
+    "grade": "12th",
+    "gender": "F",
+    "learning_style": "auditory",
+    "study_hours_per_week": 11,
+    "mastery": {
+      "Numbers": 0.98,
+      "Addition": 0.98,
+      "Subtraction": 0.98,
+      "Multiplication": 0.8338718854046113,
+      "Division": 0.98,
+      "Fractions": 0.8674111698960663,
+      "Decimals": 0.8458823419556174,
+      "Algebra": 0.7623636790680842,
+      "Equations": 0.5778585336745018
+    }
+  },
+  {
+    "student_id": "SYN0022",
+    "school": "Jefferson Academy",
+    "age": 18,
+    "grade": "7th",
+    "gender": "F",
+    "learning_style": "kinesthetic",
+    "study_hours_per_week": 17,
+    "mastery": {
+      "Numbers": 0.8734741845387801,
+      "Addition": 0.580972419414888,
+      "Subtraction": 0.6094684027859634,
+      "Multiplication": 0.5130550509502566,
+      "Division": 0.39000270585307173,
+      "Fractions": 0.5086411030500593,
+      "Decimals": 0.4406771138882703,
+      "Algebra": 0.31598230236740277,
+      "Equations": 0.12420973194212948
+    }
+  },
+  {
+    "student_id": "SYN0023",
+    "school": "Kennedy Charter",
+    "age": 21,
+    "grade": "12th",
+    "gender": "M",
+    "learning_style": "kinesthetic",
+    "study_hours_per_week": 10,
+    "mastery": {
+      "Numbers": 0.9073530660684307,
+      "Addition": 0.9132715380286222,
+      "Subtraction": 0.865073870591462,
+      "Multiplication": 0.9049188234946709,
+      "Division": 0.7428185258858334,
+      "Fractions": 0.7670862074949555,
+      "Decimals": 0.6104877734178853,
+      "Algebra": 0.5007380481051531,
+      "Equations": 0.4293858662321988
+    }
+  },
+  {
+    "student_id": "SYN0024",
+    "school": "Hamilton School",
+    "age": 17,
+    "grade": "8th",
+    "gender": "F",
+    "learning_style": "auditory",
+    "study_hours_per_week": 10,
+    "mastery": {
+      "Numbers": 0.98,
+      "Addition": 0.98,
+      "Subtraction": 0.98,
+      "Multiplication": 0.98,
+      "Division": 0.8546730302393664,
+      "Fractions": 0.7503335216871677,
+      "Decimals": 0.9092472852602584,
+      "Algebra": 0.6669741227376971,
+      "Equations": 0.5354273149348319
+    }
+  },
+  {
+    "student_id": "SYN0025",
+    "school": "Hamilton School",
+    "age": 17,
+    "grade": "6th",
+    "gender": "M",
+    "learning_style": "auditory",
+    "study_hours_per_week": 11,
+    "mastery": {
+      "Numbers": 0.8138639721551894,
+      "Addition": 0.7079388057186486,
+      "Subtraction": 0.7449586075844333,
+      "Multiplication": 0.8173099156089074,
+      "Division": 0.7474175260083114,
+      "Fractions": 0.8247664578791558,
+      "Decimals": 0.599611961889069,
+      "Algebra": 0.5683689134455224,
+      "Equations": 0.5137847678645364
+    }
+  },
+  {
+    "student_id": "SYN0026",
+    "school": "Washington Middle",
+    "age": 18,
+    "grade": "9th",
+    "gender": "M",
+    "learning_style": "kinesthetic",
+    "study_hours_per_week": 8,
+    "mastery": {
+      "Numbers": 0.7311243790860487,
+      "Addition": 0.7414678850626796,
+      "Subtraction": 0.5131100346754999,
+      "Multiplication": 0.6570008193757624,
+      "Division": 0.693021988769789,
+      "Fractions": 0.4703427742788872,
+      "Decimals": 0.6958690441823907,
+      "Algebra": 0.37000860143093156,
+      "Equations": 0.07593859149469073
+    }
+  },
+  {
+    "student_id": "SYN0027",
+    "school": "Adams High",
+    "age": 20,
+    "grade": "10th",
+    "gender": "F",
+    "learning_style": "auditory",
+    "study_hours_per_week": 9,
+    "mastery": {
+      "Numbers": 0.98,
+      "Addition": 0.98,
+      "Subtraction": 0.98,
+      "Multiplication": 0.9565969559582247,
+      "Division": 0.8993283224072738,
+      "Fractions": 0.8646732411652673,
+      "Decimals": 0.6847516687635067,
+      "Algebra": 0.7612412830134274,
+      "Equations": 0.5087911753037321
+    }
+  },
+  {
+    "student_id": "SYN0028",
+    "school": "Madison Prep",
+    "age": 21,
+    "grade": "12th",
+    "gender": "M",
+    "learning_style": "kinesthetic",
+    "study_hours_per_week": 8,
+    "mastery": {
+      "Numbers": 0.9157888988109303,
+      "Addition": 0.9385992785817907,
+      "Subtraction": 0.8935807631630046,
+      "Multiplication": 0.8085289698286171,
+      "Division": 0.6266342237483328,
+      "Fractions": 0.736590428447017,
+      "Decimals": 0.7527658530355056,
+      "Algebra": 0.6159981880159329,
+      "Equations": 0.5661016494582316
+    }
+  },
+  {
+    "student_id": "SYN0029",
+    "school": "Roosevelt Elementary",
+    "age": 16,
+    "grade": "6th",
+    "gender": "M",
+    "learning_style": "visual",
+    "study_hours_per_week": 7,
+    "mastery": {
+      "Numbers": 0.7662560279088788,
+      "Addition": 0.7935418646790575,
+      "Subtraction": 0.7043488235854151,
+      "Multiplication": 0.5666229777461476,
+      "Division": 0.4686608038114099,
+      "Fractions": 0.6105080168970562,
+      "Decimals": 0.3654979468829265,
+      "Algebra": 0.4796161095534114,
+      "Equations": 0.2460529862151022
+    }
+  },
+  {
+    "student_id": "SYN0030",
+    "school": "Kennedy Charter",
+    "age": 18,
+    "grade": "8th",
+    "gender": "M",
+    "learning_style": "kinesthetic",
+    "study_hours_per_week": 7,
+    "mastery": {
+      "Numbers": 0.812455554273797,
+      "Addition": 0.6343607015330671,
+      "Subtraction": 0.8044208406378015,
+      "Multiplication": 0.8043520833978516,
+      "Division": 0.6954432978061954,
+      "Fractions": 0.5598507853641888,
+      "Decimals": 0.6626476405492641,
+      "Algebra": 0.43049381505872625,
+      "Equations": 0.33979828780582055
+    }
+  },
+  {
+    "student_id": "SYN0031",
+    "school": "Lincoln High",
+    "age": 22,
+    "grade": "12th",
+    "gender": "M",
+    "learning_style": "visual",
+    "study_hours_per_week": 17,
+    "mastery": {
+      "Numbers": 0.98,
+      "Addition": 0.98,
+      "Subtraction": 0.98,
+      "Multiplication": 0.9706335325417113,
+      "Division": 0.8531173720508761,
+      "Fractions": 0.876329546931596,
+      "Decimals": 0.7219471154388342,
+      "Algebra": 0.8564194489586378,
+      "Equations": 0.6594516098274655
+    }
+  },
+  {
+    "student_id": "SYN0032",
+    "school": "Washington Middle",
+    "age": 16,
+    "grade": "6th",
+    "gender": "F",
+    "learning_style": "visual",
+    "study_hours_per_week": 7,
+    "mastery": {
+      "Numbers": 0.7135361544163283,
+      "Addition": 0.8160944999391445,
+      "Subtraction": 0.4742091452856517,
+      "Multiplication": 0.674859787191945,
+      "Division": 0.5979173731691153,
+      "Fractions": 0.3566187372935209,
+      "Decimals": 0.38516130471261734,
+      "Algebra": 0.2802680156353818,
+      "Equations": 0.12269291439075763
+    }
+  },
+  {
+    "student_id": "SYN0033",
+    "school": "Adams High",
+    "age": 17,
+    "grade": "6th",
+    "gender": "F",
+    "learning_style": "kinesthetic",
+    "study_hours_per_week": 12,
+    "mastery": {
+      "Numbers": 0.9109840281021903,
+      "Addition": 0.9109343568838232,
+      "Subtraction": 0.890460807449816,
+      "Multiplication": 0.7689713904051222,
+      "Division": 0.6635482859787051,
+      "Fractions": 0.7431700114070001,
+      "Decimals": 0.6291220866932413,
+      "Algebra": 0.578984696496657,
+      "Equations": 0.3842265252096688
+    }
+  },
+  {
+    "student_id": "SYN0034",
+    "school": "Kennedy Charter",
+    "age": 22,
+    "grade": "11th",
+    "gender": "F",
+    "learning_style": "kinesthetic",
+    "study_hours_per_week": 9,
+    "mastery": {
+      "Numbers": 0.7300606405492883,
+      "Addition": 0.8101334007777439,
+      "Subtraction": 0.6169165023463034,
+      "Multiplication": 0.6722523480008745,
+      "Division": 0.5757471500937805,
+      "Fractions": 0.5230078484852088,
+      "Decimals": 0.4733279280851382,
+      "Algebra": 0.2467848637973981,
+      "Equations": 0.34169645593222764
+    }
+  },
+  {
+    "student_id": "SYN0035",
+    "school": "Washington Middle",
+    "age": 16,
+    "grade": "7th",
+    "gender": "M",
+    "learning_style": "visual",
+    "study_hours_per_week": 10,
+    "mastery": {
+      "Numbers": 0.9571164124872666,
+      "Addition": 0.98,
+      "Subtraction": 0.8728003206155056,
+      "Multiplication": 0.98,
+      "Division": 0.6538204440924029,
+      "Fractions": 0.6936404066209552,
+      "Decimals": 0.6873170458697571,
+      "Algebra": 0.7090044940841209,
+      "Equations": 0.562627281882969
+    }
+  },
+  {
+    "student_id": "SYN0036",
+    "school": "Madison Prep",
+    "age": 20,
+    "grade": "10th",
+    "gender": "M",
+    "learning_style": "kinesthetic",
+    "study_hours_per_week": 11,
+    "mastery": {
+      "Numbers": 0.5936463808534036,
+      "Addition": 0.5600919542815235,
+      "Subtraction": 0.45375672130730316,
+      "Multiplication": 0.48848291263352517,
+      "Division": 0.2553152026903731,
+      "Fractions": 0.438337390826954,
+      "Decimals": 0.46250613915163885,
+      "Algebra": 0.26932855400118894,
+      "Equations": 0.10462628983260447
+    }
+  },
+  {
+    "student_id": "SYN0037",
+    "school": "Kennedy Charter",
+    "age": 23,
+    "grade": "12th",
+    "gender": "F",
+    "learning_style": "kinesthetic",
+    "study_hours_per_week": 8,
+    "mastery": {
+      "Numbers": 0.98,
+      "Addition": 0.98,
+      "Subtraction": 0.9761922812896993,
+      "Multiplication": 0.687265041753677,
+      "Division": 0.6130222510537303,
+      "Fractions": 0.6719755558003631,
+      "Decimals": 0.6223603020982802,
+      "Algebra": 0.5605019938398215,
+      "Equations": 0.3895490423277502
+    }
+  },
+  {
+    "student_id": "SYN0038",
+    "school": "Lincoln High",
+    "age": 19,
+    "grade": "8th",
+    "gender": "F",
+    "learning_style": "kinesthetic",
+    "study_hours_per_week": 5,
+    "mastery": {
+      "Numbers": 0.7963057890487775,
+      "Addition": 0.6312205937940296,
+      "Subtraction": 0.6848231345883555,
+      "Multiplication": 0.43476120617512015,
+      "Division": 0.6246167461854997,
+      "Fractions": 0.462774407788022,
+      "Decimals": 0.3933262910114645,
+      "Algebra": 0.29788505464136406,
+      "Equations": 0.2582915115918003
+    }
+  },
+  {
+    "student_id": "SYN0039",
+    "school": "Madison Prep",
+    "age": 20,
+    "grade": "10th",
+    "gender": "F",
+    "learning_style": "reading/writing",
+    "study_hours_per_week": 7,
+    "mastery": {
+      "Numbers": 0.98,
+      "Addition": 0.98,
+      "Subtraction": 0.98,
+      "Multiplication": 0.8652772347426894,
+      "Division": 0.9589582074797341,
+      "Fractions": 0.9011935895799427,
+      "Decimals": 0.7061325260809937,
+      "Algebra": 0.6981164503692017,
+      "Equations": 0.6547228557484773
+    }
+  },
+  {
+    "student_id": "SYN0040",
+    "school": "STEM Academy",
+    "age": 21,
+    "grade": "12th",
+    "gender": "M",
+    "learning_style": "visual",
+    "study_hours_per_week": 11,
+    "mastery": {
+      "Numbers": 0.7573243735362819,
+      "Addition": 0.7725534546941832,
+      "Subtraction": 0.8488643826885935,
+      "Multiplication": 0.7244574044338713,
+      "Division": 0.6833791657527432,
+      "Fractions": 0.690142582065613,
+      "Decimals": 0.6490729027508184,
+      "Algebra": 0.5356026403547247,
+      "Equations": 0.3444936234312907
+    }
+  },
+  {
+    "student_id": "SYN0041",
+    "school": "Roosevelt Elementary",
+    "age": 21,
+    "grade": "10th",
+    "gender": "M",
+    "learning_style": "kinesthetic",
+    "study_hours_per_week": 12,
+    "mastery": {
+      "Numbers": 0.8727691299151084,
+      "Addition": 0.7122217010033755,
+      "Subtraction": 0.7839512397978803,
+      "Multiplication": 0.7737740411473462,
+      "Division": 0.6066030566432634,
+      "Fractions": 0.653836149379656,
+      "Decimals": 0.5605337494599567,
+      "Algebra": 0.5815009160926455,
+      "Equations": 0.3778175161281561
+    }
+  },
+  {
+    "student_id": "SYN0042",
+    "school": "Lincoln High",
+    "age": 16,
+    "grade": "6th",
+    "gender": "F",
+    "learning_style": "visual",
+    "study_hours_per_week": 13,
+    "mastery": {
+      "Numbers": 0.7101804969782372,
+      "Addition": 0.7877108407331187,
+      "Subtraction": 0.6497354520645365,
+      "Multiplication": 0.7621403594362752,
+      "Division": 0.5536505091219095,
+      "Fractions": 0.6014281647927376,
+      "Decimals": 0.5275513277337539,
+      "Algebra": 0.24160390109019347,
+      "Equations": 0.26320923973342597
+    }
+  },
+  {
+    "student_id": "SYN0043",
+    "school": "Lincoln High",
+    "age": 20,
+    "grade": "10th",
+    "gender": "M",
+    "learning_style": "visual",
+    "study_hours_per_week": 5,
+    "mastery": {
+      "Numbers": 0.98,
+      "Addition": 0.8680224830267583,
+      "Subtraction": 0.9697578508549862,
+      "Multiplication": 0.98,
+      "Division": 0.6881565075877899,
+      "Fractions": 0.6906403046402891,
+      "Decimals": 0.7387814602781926,
+      "Algebra": 0.6517918224868461,
+      "Equations": 0.41393427830626983
+    }
+  },
+  {
+    "student_id": "SYN0044",
+    "school": "STEM Academy",
+    "age": 17,
+    "grade": "8th",
+    "gender": "M",
+    "learning_style": "auditory",
+    "study_hours_per_week": 14,
+    "mastery": {
+      "Numbers": 0.6075079439387654,
+      "Addition": 0.5737328358602183,
+      "Subtraction": 0.5479232344020455,
+      "Multiplication": 0.6224863856264643,
+      "Division": 0.4692285205474423,
+      "Fractions": 0.4369448510050202,
+      "Decimals": 0.5892873966742476,
+      "Algebra": 0.26404449562150056,
+      "Equations": 0.33624734115089827
+    }
+  },
+  {
+    "student_id": "SYN0045",
+    "school": "Adams High",
+    "age": 17,
+    "grade": "8th",
+    "gender": "M",
+    "learning_style": "reading/writing",
+    "study_hours_per_week": 16,
+    "mastery": {
+      "Numbers": 0.98,
+      "Addition": 0.8442367094975132,
+      "Subtraction": 0.9327365120290984,
+      "Multiplication": 0.98,
+      "Division": 0.7834376997061385,
+      "Fractions": 0.6278830117145636,
+      "Decimals": 0.6695803412804215,
+      "Algebra": 0.4081554429952414,
+      "Equations": 0.7268619340297187
+    }
+  },
+  {
+    "student_id": "SYN0046",
+    "school": "Madison Prep",
+    "age": 22,
+    "grade": "11th",
+    "gender": "F",
+    "learning_style": "kinesthetic",
+    "study_hours_per_week": 12,
+    "mastery": {
+      "Numbers": 0.7894645808070051,
+      "Addition": 0.8559056716207867,
+      "Subtraction": 0.6296332157368335,
+      "Multiplication": 0.6061148426449781,
+      "Division": 0.5098071453412363,
+      "Fractions": 0.5688635212059268,
+      "Decimals": 0.5145902413711458,
+      "Algebra": 0.3596873131801695,
+      "Equations": 0.2292859995836365
+    }
+  },
+  {
+    "student_id": "SYN0047",
+    "school": "Lincoln High",
+    "age": 22,
+    "grade": "11th",
+    "gender": "F",
+    "learning_style": "reading/writing",
+    "study_hours_per_week": 11,
+    "mastery": {
+      "Numbers": 0.7732014343288178,
+      "Addition": 0.7991796643749435,
+      "Subtraction": 0.6339282842497176,
+      "Multiplication": 0.3600280862686834,
+      "Division": 0.44133409572642845,
+      "Fractions": 0.6213821796078073,
+      "Decimals": 0.46370592856080284,
+      "Algebra": 0.444100173799653,
+      "Equations": 0.18061590915092007
+    }
+  },
+  {
+    "student_id": "SYN0048",
+    "school": "Hamilton School",
+    "age": 21,
+    "grade": "11th",
+    "gender": "M",
+    "learning_style": "auditory",
+    "study_hours_per_week": 7,
+    "mastery": {
+      "Numbers": 0.98,
+      "Addition": 0.98,
+      "Subtraction": 0.98,
+      "Multiplication": 0.98,
+      "Division": 0.9024649882347483,
+      "Fractions": 0.9681156254105148,
+      "Decimals": 0.7038867238365182,
+      "Algebra": 0.6893407101299946,
+      "Equations": 0.5493478551452669
+    }
+  },
+  {
+    "student_id": "SYN0049",
+    "school": "Hamilton School",
+    "age": 21,
+    "grade": "11th",
+    "gender": "F",
+    "learning_style": "visual",
+    "study_hours_per_week": 9,
+    "mastery": {
+      "Numbers": 0.98,
+      "Addition": 0.9198749595057258,
+      "Subtraction": 0.8662769498177707,
+      "Multiplication": 0.6826187973622062,
+      "Division": 0.7371643900148814,
+      "Fractions": 0.7491005762914664,
+      "Decimals": 0.7746497901280405,
+      "Algebra": 0.4842325160176129,
+      "Equations": 0.4498149592341339
+    }
+  },
+  {
+    "student_id": "SYN0050",
+    "school": "Roosevelt Elementary",
+    "age": 20,
+    "grade": "10th",
+    "gender": "M",
+    "learning_style": "kinesthetic",
+    "study_hours_per_week": 10,
+    "mastery": {
+      "Numbers": 0.9558968952567916,
+      "Addition": 0.9501516832922412,
+      "Subtraction": 0.8714118614800898,
+      "Multiplication": 0.7830667301253165,
+      "Division": 0.6821280720172779,
+      "Fractions": 0.7384954982424942,
+      "Decimals": 0.48239194126848817,
+      "Algebra": 0.5945155731576859,
+      "Equations": 0.4096043006456817
+    }
+  }
+]

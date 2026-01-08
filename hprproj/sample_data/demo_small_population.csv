@@ -1,0 +1,21 @@
+student_id,school,age,grade,gender,Numbers,Addition,Subtraction,Multiplication,Division,Fractions,Decimals,Algebra,Equations
+SYN0001,STEM Academy,17,8th,F,75,73,75,57,47,47,34,10,30
+SYN0002,Roosevelt Elementary,18,8th,F,78,78,75,72,54,57,48,43,29
+SYN0003,STEM Academy,20,10th,F,98,97,87,94,75,71,69,58,55
+SYN0004,Tech Academy,20,11th,M,93,72,84,73,67,71,74,55,40
+SYN0005,Adams High,16,7th,F,87,72,73,80,69,71,58,52,41
+SYN0006,Tech Academy,21,10th,M,86,92,80,56,60,58,52,44,25
+SYN0007,Hamilton School,15,6th,M,67,64,69,70,52,51,31,17,22
+SYN0008,Madison Prep,23,12th,F,98,98,98,98,77,81,70,52,58
+SYN0009,Kennedy Charter,17,8th,M,81,83,76,72,44,53,62,41,20
+SYN0010,Madison Prep,19,9th,M,81,82,76,60,68,67,58,35,45
+SYN0011,Washington Middle,17,6th,F,89,96,87,74,60,69,44,47,28
+SYN0012,Jefferson Academy,16,7th,M,98,98,90,83,77,82,70,64,51
+SYN0013,Roosevelt Elementary,20,11th,M,94,92,97,81,65,66,42,47,38
+SYN0014,Lincoln High,20,10th,F,81,83,66,66,44,49,52,34,38
+SYN0015,Lincoln High,20,9th,F,92,85,93,81,79,79,66,49,36
+SYN0016,STEM Academy,21,12th,M,76,84,70,55,58,52,49,40,17
+SYN0017,Madison Prep,22,11th,M,98,98,98,93,81,75,74,51,48
+SYN0018,Washington Middle,16,7th,F,76,86,77,81,66,72,55,52,54
+SYN0019,Madison Prep,18,8th,F,86,73,73,71,64,49,46,34,25
+SYN0020,Roosevelt Elementary,23,12th,M,98,98,84,98,73,70,68,74,53

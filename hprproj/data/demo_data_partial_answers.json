@@ -1,0 +1,75 @@
+[
+    {
+        "id": "scenario_1_incomplete_fraction",
+        "question": "Calculate 3/4 + 1/2",
+        "concepts_involved": [
+            "Fractions",
+            "Addition"
+        ],
+        "student_answer": "3/4 + 1/2 = 3/4 + 2/4 = ...",
+        "description": "Correct setup (common denominator) but missing final addition. Should give strong evidence for Fractions, weak for Addition.",
+        "expected_evidence": {
+            "Fractions": "High",
+            "Addition": "Low"
+        }
+    },
+    {
+        "id": "scenario_2_concept_confusion",
+        "question": "Solve for x: 2x + 4 = 10",
+        "concepts_involved": [
+            "Algebra",
+            "Equations",
+            "Subtraction",
+            "Division"
+        ],
+        "student_answer": "2x = 14, so x = 7",
+        "description": "Added instead of subtracted (error in Equations/Subtraction), but understood Algebra goal (isolate x).",
+        "expected_evidence": {
+            "Algebra": "Moderate",
+            "Equations": "Low",
+            "Subtraction": "Zero"
+        }
+    },
+    {
+        "id": "scenario_3_ambiguous_uncertainty",
+        "question": "What is 0.5 as a fraction?",
+        "concepts_involved": [
+            "Decimals",
+            "Fractions"
+        ],
+        "student_answer": "I think it is 1/2 but I am not sure, maybe 1/5?",
+        "description": "Correct answer mentioned but with high uncertainty markers. Should result in high ambiguity score.",
+        "expected_evidence": {
+            "Decimals": "Weak",
+            "Fractions": "Weak"
+        }
+    },
+    {
+        "id": "scenario_4_multi_step_perfect",
+        "question": "Find the area of a rectangle with length 2/3 and width 1/4",
+        "concepts_involved": [
+            "Multiplication",
+            "Fractions"
+        ],
+        "student_answer": "Area = length × width = 2/3 × 1/4 = 2/12 = 1/6",
+        "description": "Perfect execution of all concepts.",
+        "expected_evidence": {
+            "Multiplication": "High",
+            "Fractions": "High"
+        }
+    },
+    {
+        "id": "scenario_5_process_demonstration",
+        "question": "Divide 15 by 3",
+        "concepts_involved": [
+            "Division",
+            "Numbers"
+        ],
+        "student_answer": "15 - 3 = 12, 12 - 3 = 9, 9 - 3 = 6, 6 - 3 = 3, 3 - 3 = 0. Counted 5 times.",
+        "description": "Demonstrates limited conceptual understanding (repeated subtraction) rather than direct division mastery.",
+        "expected_evidence": {
+            "Division": "Moderate",
+            "Numbers": "High"
+        }
+    }
+]

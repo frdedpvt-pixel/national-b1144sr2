@@ -1,0 +1,302 @@
+[
+  {
+    "student_id": "STRUGGLING001",
+    "school": "Roosevelt Elementary",
+    "age": 19,
+    "grade": "9th",
+    "gender": "F",
+    "learning_style": "kinesthetic",
+    "study_hours_per_week": 9,
+    "mastery": {
+      "Numbers": 0.6859999999999999,
+      "Addition": 0.6859999999999999,
+      "Subtraction": 0.6859999999999999,
+      "Multiplication": 0.5859392354184537,
+      "Division": 0.4708888038128843,
+      "Fractions": 0.6244550661832571,
+      "Decimals": 0.5087985176389902,
+      "Algebra": 0.4101864973997912,
+      "Equations": 0.455209380913196
+    }
+  },
+  {
+    "student_id": "STRUGGLING002",
+    "school": "Adams High",
+    "age": 21,
+    "grade": "10th",
+    "gender": "F",
+    "learning_style": "auditory",
+    "study_hours_per_week": 17,
+    "mastery": {
+      "Numbers": 0.4061500876525905,
+      "Addition": 0.41546815435026363,
+      "Subtraction": 0.4932204404401146,
+      "Multiplication": 0.3450108278457951,
+      "Division": 0.28102966480268304,
+      "Fractions": 0.37086257052470795,
+      "Decimals": 0.2934127471158169,
+      "Algebra": 0.24123991939164172,
+      "Equations": 0.08892097675091142
+    }
+  },
+  {
+    "student_id": "STRUGGLING003",
+    "school": "Hamilton School",
+    "age": 16,
+    "grade": "6th",
+    "gender": "M",
+    "learning_style": "auditory",
+    "study_hours_per_week": 7,
+    "mastery": {
+      "Numbers": 0.6859999999999999,
+      "Addition": 0.6848986645147987,
+      "Subtraction": 0.6568431090857247,
+      "Multiplication": 0.6219497411877809,
+      "Division": 0.591993389988042,
+      "Fractions": 0.5439316747071854,
+      "Decimals": 0.5026703458789875,
+      "Algebra": 0.38761146510528316,
+      "Equations": 0.4200331804103559
+    }
+  },
+  {
+    "student_id": "STRUGGLING004",
+    "school": "Tech Academy",
+    "age": 21,
+    "grade": "11th",
+    "gender": "M",
+    "learning_style": "reading/writing",
+    "study_hours_per_week": 9,
+    "mastery": {
+      "Numbers": 0.6859999999999999,
+      "Addition": 0.6859999999999999,
+      "Subtraction": 0.6495777787839873,
+      "Multiplication": 0.6859999999999999,
+      "Division": 0.5338251413044133,
+      "Fractions": 0.6859999999999999,
+      "Decimals": 0.6742041761191537,
+      "Algebra": 0.4808448495353951,
+      "Equations": 0.4699775852877985
+    }
+  },
+  {
+    "student_id": "STRUGGLING005",
+    "school": "Lincoln High",
+    "age": 21,
+    "grade": "11th",
+    "gender": "F",
+    "learning_style": "visual",
+    "study_hours_per_week": 9,
+    "mastery": {
+      "Numbers": 0.6833602199203465,
+      "Addition": 0.6118440596910899,
+      "Subtraction": 0.6357506485717104,
+      "Multiplication": 0.5768291440143933,
+      "Division": 0.4469717263532422,
+      "Fractions": 0.5038481962644125,
+      "Decimals": 0.4143691891506903,
+      "Algebra": 0.329434811291232,
+      "Equations": 0.24617070264084423
+    }
+  },
+  {
+    "student_id": "STRUGGLING006",
+    "school": "Roosevelt Elementary",
+    "age": 16,
+    "grade": "6th",
+    "gender": "F",
+    "learning_style": "kinesthetic",
+    "study_hours_per_week": 12,
+    "mastery": {
+      "Numbers": 0.53200959631128,
+      "Addition": 0.5870457903128188,
+      "Subtraction": 0.5522445713719876,
+      "Multiplication": 0.41906405449538664,
+      "Division": 0.41677729342804637,
+      "Fractions": 0.41704201595249285,
+      "Decimals": 0.43627553484547993,
+      "Algebra": 0.35251733280884273,
+      "Equations": 0.14079387321270462
+    }
+  },
+  {
+    "student_id": "STRUGGLING007",
+    "school": "Jefferson Academy",
+    "age": 17,
+    "grade": "8th",
+    "gender": "F",
+    "learning_style": "kinesthetic",
+    "study_hours_per_week": 11,
+    "mastery": {
+      "Numbers": 0.6859999999999999,
+      "Addition": 0.6859999999999999,
+      "Subtraction": 0.6859999999999999,
+      "Multiplication": 0.6859999999999999,
+      "Division": 0.6859999999999999,
+      "Fractions": 0.6859999999999999,
+      "Decimals": 0.5709160656058938,
+      "Algebra": 0.6241204397974252,
+      "Equations": 0.5430490737289291
+    }
+  },
+  {
+    "student_id": "STRUGGLING008",
+    "school": "STEM Academy",
+    "age": 21,
+    "grade": "12th",
+    "gender": "M",
+    "learning_style": "reading/writing",
+    "study_hours_per_week": 11,
+    "mastery": {
+      "Numbers": 0.5980970017441831,
+      "Addition": 0.44824066521581035,
+      "Subtraction": 0.46189553648966286,
+      "Multiplication": 0.45819588552116586,
+      "Division": 0.31479671058658804,
+      "Fractions": 0.3718012019963877,
+      "Decimals": 0.2544229827084625,
+      "Algebra": 0.23526734354158027,
+      "Equations": 0.18614189341207654
+    }
+  },
+  {
+    "student_id": "STRUGGLING009",
+    "school": "Washington Middle",
+    "age": 20,
+    "grade": "9th",
+    "gender": "F",
+    "learning_style": "auditory",
+    "study_hours_per_week": 7,
+    "mastery": {
+      "Numbers": 0.6859999999999999,
+      "Addition": 0.6859999999999999,
+      "Subtraction": 0.6859999999999999,
+      "Multiplication": 0.6859999999999999,
+      "Division": 0.6859999999999999,
+      "Fractions": 0.5906903593174162,
+      "Decimals": 0.5485563788963639,
+      "Algebra": 0.5621673712650238,
+      "Equations": 0.34135244104736967
+    }
+  },
+  {
+    "student_id": "STRUGGLING010",
+    "school": "Madison Prep",
+    "age": 18,
+    "grade": "8th",
+    "gender": "F",
+    "learning_style": "visual",
+    "study_hours_per_week": 13,
+    "mastery": {
+      "Numbers": 0.5695670954367823,
+      "Addition": 0.5762404555182495,
+      "Subtraction": 0.44425850041775206,
+      "Multiplication": 0.44230230623347877,
+      "Division": 0.376031027703739,
+      "Fractions": 0.37339818322221824,
+      "Decimals": 0.2577645841314171,
+      "Algebra": 0.17620685877324205,
+      "Equations": 0.15748592410760237
+    }
+  },
+  {
+    "student_id": "STRUGGLING011",
+    "school": "Hamilton School",
+    "age": 21,
+    "grade": "12th",
+    "gender": "M",
+    "learning_style": "kinesthetic",
+    "study_hours_per_week": 10,
+    "mastery": {
+      "Numbers": 0.6859999999999999,
+      "Addition": 0.6859999999999999,
+      "Subtraction": 0.6859999999999999,
+      "Multiplication": 0.5913578422286367,
+      "Division": 0.6531888297280941,
+      "Fractions": 0.6719983721376194,
+      "Decimals": 0.5345971091757148,
+      "Algebra": 0.48177295377371604,
+      "Equations": 0.425457014779975
+    }
+  },
+  {
+    "student_id": "STRUGGLING012",
+    "school": "Madison Prep",
+    "age": 18,
+    "grade": "7th",
+    "gender": "F",
+    "learning_style": "kinesthetic",
+    "study_hours_per_week": 10,
+    "mastery": {
+      "Numbers": 0.44561392505934627,
+      "Addition": 0.478168923368282,
+      "Subtraction": 0.5625540756789602,
+      "Multiplication": 0.3407942283067685,
+      "Division": 0.26028050613852943,
+      "Fractions": 0.2534590745132973,
+      "Decimals": 0.1725729392343693,
+      "Algebra": 0.25631556434351177,
+      "Equations": 0.22536201192867863
+    }
+  },
+  {
+    "student_id": "STRUGGLING013",
+    "school": "Washington Middle",
+    "age": 21,
+    "grade": "10th",
+    "gender": "M",
+    "learning_style": "auditory",
+    "study_hours_per_week": 10,
+    "mastery": {
+      "Numbers": 0.5709732890278979,
+      "Addition": 0.5734809846195799,
+      "Subtraction": 0.5178785089885243,
+      "Multiplication": 0.46044538247067107,
+      "Division": 0.39295820068624715,
+      "Fractions": 0.5290789881408876,
+      "Decimals": 0.41495082441334236,
+      "Algebra": 0.2765056837796312,
+      "Equations": 0.11306433409499538
+    }
+  },
+  {
+    "student_id": "STRUGGLING014",
+    "school": "Kennedy Charter",
+    "age": 22,
+    "grade": "12th",
+    "gender": "M",
+    "learning_style": "auditory",
+    "study_hours_per_week": 11,
+    "mastery": {
+      "Numbers": 0.5532048871202889,
+      "Addition": 0.6198968042882628,
+      "Subtraction": 0.5361559815921065,
+      "Multiplication": 0.5522493583461098,
+      "Division": 0.48593386791222654,
+      "Fractions": 0.5037555201414371,
+      "Decimals": 0.40886601642646936,
+      "Algebra": 0.336425641773199,
+      "Equations": 0.26866735232240213
+    }
+  },
+  {
+    "student_id": "STRUGGLING015",
+    "school": "Kennedy Charter",
+    "age": 23,
+    "grade": "12th",
+    "gender": "F",
+    "learning_style": "visual",
+    "study_hours_per_week": 4,
+    "mastery": {
+      "Numbers": 0.6859999999999999,
+      "Addition": 0.6859999999999999,
+      "Subtraction": 0.6856520831715001,
+      "Multiplication": 0.6859999999999999,
+      "Division": 0.5569528227166607,
+      "Fractions": 0.5821242061204825,
+      "Decimals": 0.5614995206770607,
+      "Algebra": 0.496679641146793,
+      "Equations": 0.45233337783639765
+    }
+  }
+]

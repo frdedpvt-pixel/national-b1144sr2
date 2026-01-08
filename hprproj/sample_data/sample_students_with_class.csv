@@ -1,0 +1,11 @@
+student_id,school,age,grade,class,Numbers,Addition,Subtraction,Multiplication,Division,Fractions,Decimals,Algebra,Equations
+S001,Lincoln High,15,10th,A,95,90,88,75,65,70,60,45,30
+S002,Washington Middle,13,8th,B,85,80,82,60,45,55,40,25,15
+S003,Jefferson Academy,16,11th,A,98,95,92,88,80,85,78,70,60
+S004,Roosevelt Elementary,11,6th,C,70,65,63,40,20,35,25,10,5
+S005,Kennedy Charter,14,9th,A,88,85,80,70,55,65,50,40,28
+S006,Lincoln High,16,10th,A,90,88,85,80,70,75,65,55,40
+S007,Lincoln High,15,10th,B,82,78,80,68,58,62,52,38,25
+S008,Washington Middle,13,8th,A,88,85,87,72,60,68,58,45,32
+S009,Jefferson Academy,17,11th,B,95,92,90,85,78,82,75,68,58
+S010,Kennedy Charter,14,9th,B,85,82,78,65,50,58,45,35,22

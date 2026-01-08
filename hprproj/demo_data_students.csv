@@ -1,0 +1,16 @@
+student_id,school,age,grade,gender,Numbers,Addition,Subtraction,Multiplication,Division,Fractions,Decimals,Algebra,Equations
+ST001,Lincoln High,15,10th,F,92,88,85,65,48,60,42,28,15
+ST002,Washington Middle,13,8th,M,88,82,80,58,35,52,38,20,10
+ST003,Jefferson Academy,16,11th,F,95,92,90,82,75,78,68,55,42
+ST004,Roosevelt Elementary,11,6th,M,75,68,65,42,25,38,22,12,5
+ST005,Kennedy Charter,14,9th,F,90,85,82,72,60,68,50,35,22
+ST006,Lincoln High,15,10th,M,70,65,62,45,30,42,28,18,8
+ST007,Madison Prep,17,12th,F,98,95,93,88,85,90,82,75,68
+ST008,Hamilton School,12,7th,M,82,78,75,55,40,48,35,25,12
+ST009,Adams High,16,11th,F,85,80,78,68,52,62,48,38,28
+ST010,Jefferson Academy,14,9th,M,92,88,86,75,65,72,58,45,32
+ST011,Washington Middle,13,8th,F,78,72,70,50,32,45,30,18,8
+ST012,Kennedy Charter,15,10th,M,88,85,82,70,58,65,52,40,30
+ST013,Lincoln High,16,11th,F,95,90,88,78,68,75,65,52,40
+ST014,Roosevelt Elementary,11,6th,M,68,62,58,35,20,30,18,10,5
+ST015,Madison Prep,17,12th,M,96,94,92,85,80,88,78,70,62

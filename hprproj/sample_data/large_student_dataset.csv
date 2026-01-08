@@ -1,0 +1,121 @@
+student_id,school,age,grade,class,Numbers,Addition,Subtraction,Multiplication,Division,Fractions,Decimals,Algebra,Equations
+STU001,Lincoln High School,15,10th,A,95,92,90,85,78,80,75,68,60
+STU002,Lincoln High School,15,10th,A,88,85,83,78,72,75,68,62,55
+STU003,Lincoln High School,16,10th,A,92,90,88,82,76,78,72,65,58
+STU004,Lincoln High School,15,10th,B,85,82,80,75,68,70,65,58,50
+STU005,Lincoln High School,16,10th,B,90,88,86,80,74,76,70,63,56
+STU006,Lincoln High School,15,10th,B,87,84,82,77,70,72,66,59,52
+STU007,Lincoln High School,16,10th,C,82,80,78,72,65,68,62,55,48
+STU008,Lincoln High School,15,10th,C,86,83,81,75,68,70,64,57,50
+STU009,Lincoln High School,16,10th,C,84,81,79,73,66,69,63,56,49
+STU010,Lincoln High School,14,9th,A,90,88,86,80,72,75,68,60,52
+STU011,Lincoln High School,14,9th,A,87,85,83,77,70,72,66,58,50
+STU012,Lincoln High School,15,9th,A,92,89,87,82,75,77,70,63,55
+STU013,Lincoln High School,14,9th,B,85,82,80,74,67,69,63,56,48
+STU014,Lincoln High School,15,9th,B,88,86,84,78,71,73,67,60,52
+STU015,Lincoln High School,14,9th,B,86,83,81,76,68,70,64,57,49
+STU016,Washington Middle School,13,8th,A,85,83,81,75,68,70,64,56,48
+STU017,Washington Middle School,13,8th,A,88,86,84,78,71,73,67,59,51
+STU018,Washington Middle School,14,8th,A,90,88,86,80,73,75,69,61,53
+STU019,Washington Middle School,13,8th,B,82,80,78,72,65,67,61,53,45
+STU020,Washington Middle School,14,8th,B,86,84,82,76,69,71,65,57,49
+STU021,Washington Middle School,13,8th,B,84,82,80,74,67,69,63,55,47
+STU022,Washington Middle School,14,8th,C,80,78,76,70,63,65,59,51,43
+STU023,Washington Middle School,13,8th,C,83,81,79,73,66,68,62,54,46
+STU024,Washington Middle School,14,8th,C,81,79,77,71,64,66,60,52,44
+STU025,Washington Middle School,12,7th,A,82,80,78,72,65,67,61,53,45
+STU026,Washington Middle School,12,7th,A,85,83,81,75,68,70,64,56,48
+STU027,Washington Middle School,13,7th,A,87,85,83,77,70,72,66,58,50
+STU028,Washington Middle School,12,7th,B,78,76,74,68,61,63,57,49,41
+STU029,Washington Middle School,13,7th,B,82,80,78,72,65,67,61,53,45
+STU030,Washington Middle School,12,7th,B,80,78,76,70,63,65,59,51,43
+STU031,Jefferson Academy,16,11th,A,96,94,92,88,82,85,80,74,68
+STU032,Jefferson Academy,17,11th,A,94,92,90,86,80,83,78,72,66
+STU033,Jefferson Academy,16,11th,A,95,93,91,87,81,84,79,73,67
+STU034,Jefferson Academy,17,11th,B,92,90,88,84,78,81,76,70,64
+STU035,Jefferson Academy,16,11th,B,93,91,89,85,79,82,77,71,65
+STU036,Jefferson Academy,17,11th,B,91,89,87,83,77,80,75,69,63
+STU037,Jefferson Academy,16,11th,C,88,86,84,80,74,77,72,66,60
+STU038,Jefferson Academy,17,11th,C,90,88,86,82,76,79,74,68,62
+STU039,Jefferson Academy,16,11th,C,89,87,85,81,75,78,73,67,61
+STU040,Jefferson Academy,17,12th,A,98,96,94,90,85,88,84,78,72
+STU041,Jefferson Academy,18,12th,A,97,95,93,89,84,87,83,77,71
+STU042,Jefferson Academy,17,12th,A,96,94,92,88,83,86,82,76,70
+STU043,Jefferson Academy,18,12th,B,94,92,90,86,81,84,80,74,68
+STU044,Jefferson Academy,17,12th,B,95,93,91,87,82,85,81,75,69
+STU045,Jefferson Academy,18,12th,B,93,91,89,85,80,83,79,73,67
+STU046,Roosevelt Elementary,11,6th,A,75,73,71,65,58,60,54,46,38
+STU047,Roosevelt Elementary,11,6th,A,78,76,74,68,61,63,57,49,41
+STU048,Roosevelt Elementary,12,6th,A,80,78,76,70,63,65,59,51,43
+STU049,Roosevelt Elementary,11,6th,B,72,70,68,62,55,57,51,43,35
+STU050,Roosevelt Elementary,12,6th,B,76,74,72,66,59,61,55,47,39
+STU051,Roosevelt Elementary,11,6th,B,74,72,70,64,57,59,53,45,37
+STU052,Roosevelt Elementary,12,6th,C,70,68,66,60,53,55,49,41,33
+STU053,Roosevelt Elementary,11,6th,C,73,71,69,63,56,58,52,44,36
+STU054,Roosevelt Elementary,12,6th,C,71,69,67,61,54,56,50,42,34
+STU055,Roosevelt Elementary,10,5th,A,68,66,64,58,51,53,47,39,31
+STU056,Roosevelt Elementary,10,5th,A,71,69,67,61,54,56,50,42,34
+STU057,Roosevelt Elementary,11,5th,A,73,71,69,63,56,58,52,44,36
+STU058,Roosevelt Elementary,10,5th,B,65,63,61,55,48,50,44,36,28
+STU059,Roosevelt Elementary,11,5th,B,69,67,65,59,52,54,48,40,32
+STU060,Roosevelt Elementary,10,5th,B,67,65,63,57,50,52,46,38,30
+STU061,Kennedy Charter,14,9th,A,89,87,85,79,72,74,68,60,52
+STU062,Kennedy Charter,14,9th,A,91,89,87,81,74,76,70,62,54
+STU063,Kennedy Charter,15,9th,A,93,91,89,83,76,78,72,64,56
+STU064,Kennedy Charter,14,9th,B,86,84,82,76,69,71,65,57,49
+STU065,Kennedy Charter,15,9th,B,89,87,85,79,72,74,68,60,52
+STU066,Kennedy Charter,14,9th,B,87,85,83,77,70,72,66,58,50
+STU067,Kennedy Charter,15,9th,C,84,82,80,74,67,69,63,55,47
+STU068,Kennedy Charter,14,9th,C,86,84,82,76,69,71,65,57,49
+STU069,Kennedy Charter,15,9th,C,85,83,81,75,68,70,64,56,48
+STU070,Kennedy Charter,15,10th,A,92,90,88,82,75,77,71,63,55
+STU071,Kennedy Charter,16,10th,A,94,92,90,84,77,79,73,65,57
+STU072,Kennedy Charter,15,10th,A,93,91,89,83,76,78,72,64,56
+STU073,Kennedy Charter,16,10th,B,89,87,85,79,72,74,68,60,52
+STU074,Kennedy Charter,15,10th,B,91,89,87,81,74,76,70,62,54
+STU075,Kennedy Charter,16,10th,B,90,88,86,80,73,75,69,61,53
+STU076,Riverside Academy,15,10th,A,90,88,86,80,73,75,69,61,53
+STU077,Riverside Academy,16,10th,A,92,90,88,82,75,77,71,63,55
+STU078,Riverside Academy,15,10th,A,91,89,87,81,74,76,70,62,54
+STU079,Riverside Academy,16,10th,B,87,85,83,77,70,72,66,58,50
+STU080,Riverside Academy,15,10th,B,89,87,85,79,72,74,68,60,52
+STU081,Riverside Academy,16,10th,B,88,86,84,78,71,73,67,59,51
+STU082,Riverside Academy,14,9th,A,86,84,82,76,69,71,65,57,49
+STU083,Riverside Academy,15,9th,A,88,86,84,78,71,73,67,59,51
+STU084,Riverside Academy,14,9th,A,87,85,83,77,70,72,66,58,50
+STU085,Riverside Academy,15,9th,B,83,81,79,73,66,68,62,54,46
+STU086,Riverside Academy,14,9th,B,85,83,81,75,68,70,64,56,48
+STU087,Riverside Academy,15,9th,B,84,82,80,74,67,69,63,55,47
+STU088,Mountain View School,16,11th,A,94,92,90,84,77,79,73,65,57
+STU089,Mountain View School,17,11th,A,96,94,92,86,79,81,75,67,59
+STU090,Mountain View School,16,11th,A,95,93,91,85,78,80,74,66,58
+STU091,Mountain View School,17,11th,B,91,89,87,81,74,76,70,62,54
+STU092,Mountain View School,16,11th,B,93,91,89,83,76,78,72,64,56
+STU093,Mountain View School,17,11th,B,92,90,88,82,75,77,71,63,55
+STU094,Mountain View School,15,10th,A,88,86,84,78,71,73,67,59,51
+STU095,Mountain View School,16,10th,A,90,88,86,80,73,75,69,61,53
+STU096,Mountain View School,15,10th,A,89,87,85,79,72,74,68,60,52
+STU097,Mountain View School,16,10th,B,85,83,81,75,68,70,64,56,48
+STU098,Mountain View School,15,10th,B,87,85,83,77,70,72,66,58,50
+STU099,Mountain View School,16,10th,B,86,84,82,76,69,71,65,57,49
+STU100,Mountain View School,14,9th,A,84,82,80,74,67,69,63,55,47
+STU101,Coastal Prep,17,12th,A,97,95,93,89,84,87,83,77,71
+STU102,Coastal Prep,18,12th,A,98,96,94,90,85,88,84,78,72
+STU103,Coastal Prep,17,12th,A,96,94,92,88,83,86,82,76,70
+STU104,Coastal Prep,18,12th,B,94,92,90,86,81,84,80,74,68
+STU105,Coastal Prep,17,12th,B,95,93,91,87,82,85,81,75,69
+STU106,Coastal Prep,18,12th,B,93,91,89,85,80,83,79,73,67
+STU107,Coastal Prep,16,11th,A,92,90,88,84,78,81,76,70,64
+STU108,Coastal Prep,17,11th,A,94,92,90,86,80,83,78,72,66
+STU109,Coastal Prep,16,11th,A,93,91,89,85,79,82,77,71,65
+STU110,Coastal Prep,17,11th,B,89,87,85,81,75,78,73,67,61
+STU111,Coastal Prep,16,11th,B,91,89,87,83,77,80,75,69,63
+STU112,Coastal Prep,17,11th,B,90,88,86,82,76,79,74,68,62
+STU113,Green Valley High,15,10th,A,91,89,87,81,74,76,70,62,54
+STU114,Green Valley High,16,10th,A,93,91,89,83,76,78,72,64,56
+STU115,Green Valley High,15,10th,A,92,90,88,82,75,77,71,63,55
+STU116,Green Valley High,16,10th,B,88,86,84,78,71,73,67,59,51
+STU117,Green Valley High,15,10th,B,90,88,86,80,73,75,69,61,53
+STU118,Green Valley High,16,10th,B,89,87,85,79,72,74,68,60,52
+STU119,Green Valley High,14,9th,A,87,85,83,77,70,72,66,58,50
+STU120,Green Valley High,15,9th,A,89,87,85,79,72,74,68,60,52

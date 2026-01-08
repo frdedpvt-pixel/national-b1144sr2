@@ -41,6 +41,6 @@ export const config = {
   },
 
   // Server Configuration
-  port: 5001,
+  port: 5000,
   clientUrl: 'http://localhost:5173'
 };

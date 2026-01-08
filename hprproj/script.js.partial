@@ -1,0 +1,100 @@
+
+// ============================================================================
+// PARTIAL MARKING / SOFT EVIDENCE
+// ============================================================================
+
+async function submitPartialAnswer() {
+    const answer = document.getElementById('studentAnswer').value;
+    
+    // Get selected concepts
+    const selectedConcepts = [];
+    document.querySelectorAll('.concept-check:checked').forEach(cb => {
+        selectedConcepts.push(cb.value);
+    });
+    
+    if (!answer.trim()) {
+        alert('Please enter an answer.');
+        return;
+    }
+    
+    if (selectedConcepts.length === 0) {
+        alert('Please select at least one related concept.');
+        return;
+    }
+    
+    const btn = document.getElementById('submitAnswerBtn');
+    btn.textContent = 'Analyzing...';
+    btn.disabled = true;
+    
+    try {
+        const response = await fetch(`${API_BASE}/submit_answer`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                answer: answer,
+                concepts: selectedConcepts,
+                student_id: currentStudent.student_id // Use actual ID
+            })
+        });
+        
+        const result = await response.json();
+        
+        displayMarkingResults(result);
+        
+        // Refresh mastery display as it might have changed
+        await loadData(); 
+        
+    } catch (error) {
+        console.error('Error submitting answer:', error);
+        alert('Failed to analyze answer.');
+    } finally {
+        btn.textContent = '📝 Analyze & Update Mastery';
+        btn.disabled = false;
+    }
+}
+
+function displayMarkingResults(result) {
+    const container = document.getElementById('markingResult');
+    const evidenceContainer = document.getElementById('evidenceBars');
+    const updatesContainer = document.getElementById('masteryUpdates');
+    
+    container.style.display = 'block';
+    evidenceContainer.innerHTML = '';
+    updatesContainer.innerHTML = '';
+    
+    // Display Evidence Scores
+    if (Object.keys(result.evidence).length === 0) {
+        evidenceContainer.innerHTML = '<p>No evidence found for selected concepts.</p>';
+    } else {
+        for (const [concept, score] of Object.entries(result.evidence)) {
+            const percent = (score * 100).toFixed(0);
+            const div = document.createElement('div');
+            div.className = 'evidence-item';
+            div.innerHTML = `
+                <span style="width: 120px; font-weight:bold;">${concept}</span>
+                <div class="evidence-bar-bg">
+                    <div class="evidence-bar-fill" style="width: ${percent}%"></div>
+                </div>
+                <span style="width: 50px; text-align:right;">${percent}%</span>
+            `;
+            evidenceContainer.appendChild(div);
+        }
+    }
+    
+    // Display Updates
+    if (result.updates && result.updates.length > 0) {
+        result.updates.forEach(update => {
+            const div = document.createElement('div');
+            div.className = 'update-log';
+            const change = (update.new - update.old) * 100;
+            const sign = change >= 0 ? '+' : '';
+            div.innerHTML = `
+                <strong>${update.concept}</strong> updated: 
+                ${(update.old * 100).toFixed(1)}% → 
+                <strong>${(update.new * 100).toFixed(1)}%</strong> 
+                (${sign}${change.toFixed(1)}%)
+            `;
+            updatesContainer.appendChild(div);
+        });
+    }
+}

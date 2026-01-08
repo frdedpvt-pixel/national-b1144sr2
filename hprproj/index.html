@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Causal Knowledge Tracing System</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Partial Marking Styles */
+        .marking-card .marking-content {
+            padding: 1rem 0;
+        }
+
+        .concept-checkboxes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            max-height: 150px;
+            overflow-y: auto;
+            border: 1px solid var(--border);
+            padding: 0.5rem;
+            border-radius: 6px;
+        }
+
+        .concept-checkbox-item {
+            background: var(--bg-secondary);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .marking-result {
+            margin-top: 1.5rem;
+            background: var(--bg-secondary);
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .evidence-item {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .evidence-bar-bg {
+            flex-grow: 1;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            margin: 0 1rem;
+        }
+
+        .evidence-bar-fill {
+            height: 100%;
+            border-radius: 4px;
+            background: var(--success);
+            transition: width 0.5s ease;
+        }
+
+        .update-log {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+            padding-top: 0.5rem;
+            border-top: 1px solid var(--border);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">
+                    <span class="gradient-text">Causal Knowledge Tracing</span>
+                </h1>
+                <p class="subtitle">Counterfactual Reasoning for Educational AI</p>
+            </div>
+        </header>
+
+        <!-- File Upload & Student Selection -->
+        <div class="card upload-card">
+            <div class="card-header">
+                <h2>Student Data Management</h2>
+                <div class="badge">Multi-Student Support</div>
+            </div>
+            <div class="upload-section">
+                <div class="upload-controls">
+                    <input type="file" id="fileInput" accept=".csv,.json" style="display:none">
+                    <button id="uploadBtn" class="btn btn-secondary">📁 Upload CSV/JSON</button>
+                    <span id="uploadStatus" class="upload-status"></span>
+                </div>
+
+                <!-- Student Filters -->
+                <div class="filter-section">
+                    <h3 class="filter-title">🔍 Filter Students</h3>
+                    <div class="filter-controls">
+                        <div class="filter-group">
+                            <label for="filterSchool">School:</label>
+                            <select id="filterSchool" class="select-input filter-select">
+                                <option value="">All Schools</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="filterGrade">Grade:</label>
+                            <select id="filterGrade" class="select-input filter-select">
+                                <option value="">All Grades</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="filterClass">Class:</label>
+                            <select id="filterClass" class="select-input filter-select">
+                                <option value="">All Classes</option>
+                            </select>
+                        </div>
+                        <button id="clearFilters" class="btn btn-small">Clear Filters</button>
+                    </div>
+                    <div id="filterStats" class="filter-stats"></div>
+                </div>
+
+                <div class="student-selector">
+                    <label for="studentSelect">Select Student: <span id="studentCount"
+                            class="student-count"></span></label>
+                    <select id="studentSelect" class="select-input">
+                        <option value="student_001">Demo Student (student_001)</option>
+                    </select>
+                    <div id="studentMetadata" class="student-metadata"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Grid -->
+        <div class="grid">
+            <!-- Left Column: Concept Graph -->
+            <div class="card graph-card">
+                <div class="card-header">
+                    <h2>Concept Dependency Graph</h2>
+                    <div class="badge">Prerequisite Structure</div>
+                </div>
+                <div class="graph-container" id="graphContainer">
+                    <!-- Graph will be rendered here -->
+                </div>
+            </div>
+
+            <!-- Right Column: Student Mastery -->
+            <div class="card mastery-card">
+                <div class="card-header">
+                    <h2>Student Mastery Profile</h2>
+                    <div class="badge">Latent State</div>
+                </div>
+                <div class="mastery-container" id="masteryContainer">
+                    <!-- Mastery bars will be rendered here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Performance Prediction Card -->
+        <div class="card prediction-card">
+            <div class="card-header">
+                <h2>Causal Performance Model</h2>
+                <div class="badge">P(correct | mastery, confounders)</div>
+            </div>
+            <div class="prediction-controls">
+                <div class="control-group">
+                    <label for="testConcept">Test Concept:</label>
+                    <select id="testConcept" class="select-input">
+                        <!-- Options populated dynamically -->
+                    </select>
+                </div>
+
+                <div class="control-row">
+                    <div class="slider-group">
+                        <label>Difficulty: <span id="difficultyValue">0.5</span></label>
+                        <input type="range" id="difficulty" min="0" max="1" step="0.05" value="0.5" class="slider">
+                    </div>
+                    <div class="slider-group">
+                        <label>Time Pressure: <span id="timePressureValue">0.5</span></label>
+                        <input type="range" id="timePressure" min="0" max="1" step="0.05" value="0.5" class="slider">
+                    </div>
+                    <div class="slider-group">
+                        <label>Language Complexity: <span id="languageValue">0.5</span></label>
+                        <input type="range" id="language" min="0" max="1" step="0.05" value="0.5" class="slider">
+                    </div>
+                </div>
+
+                <button id="predictBtn" class="btn btn-primary">⚡ Predict Performance</button>
+
+                <div id="predictionResult" class="prediction-result"></div>
+            </div>
+        </div>
+
+        <!-- Counterfactual Intervention Card -->
+        <div class="card intervention-card">
+            <div class="card-header">
+                <h2>Counterfactual Intervention</h2>
+                <div class="badge">What-If Analysis</div>
+            </div>
+            <div class="intervention-controls">
+                <div class="intervention-inputs">
+                    <div class="control-group">
+                        <label for="interventionConcept">Intervene on Concept:</label>
+                        <select id="interventionConcept" class="select-input">
+                            <!-- Options populated dynamically -->
+                        </select>
+                    </div>
+                    <div class="slider-group">
+                        <label>New Mastery Level: <span id="newMasteryValue">0.9</span></label>
+                        <input type="range" id="newMastery" min="0" max="1" step="0.05" value="0.9" class="slider">
+                    </div>
+                </div>
+                <button id="interveneBtn" class="btn btn-success">Apply Intervention</button>
+                <div id="interventionResult" class="intervention-result"></div>
+            </div>
+        </div>
+
+        <!-- Partial Marking Demo Card (NEW) -->
+        <div class="card marking-card">
+            <div class="card-header">
+                <h2>Partial Answer Evaluation</h2>
+                <div class="badge">Soft Evidence Analysis</div>
+            </div>
+
+            <div class="marking-content">
+                <p class="section-desc">Test how the system handles ambiguous or incomplete answers using soft evidence
+                    updates.</p>
+
+                <div class="marking-input-group">
+                    <label><strong>1. Select Related Concepts:</strong></label>
+                    <div id="markingConcepts" class="concept-checkboxes">
+                        <!-- Checkboxes populated by JS -->
+                    </div>
+                </div>
+
+                <div class="marking-input-group">
+                    <label for="studentAnswer"><strong>2. Student Answer (Text):</strong></label>
+                    <div class="input-wrapper">
+                        <textarea id="studentAnswer" rows="3"
+                            placeholder="e.g. '3/4 + 1/2 = 3/4 + 2/4' (Correct setup but unfinished)"></textarea>
+                    </div>
+                </div>
+
+                <button id="submitAnswerBtn" class="btn btn-primary">📝 Analyze & Update Mastery</button>
+
+                <div id="markingResult" class="marking-result" style="display:none">
+                    <h3>Analysis Results</h3>
+                    <div id="evidenceBars"></div>
+                    <div id="masteryUpdates"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Educational Hackathon Demo • Causality-Aware ML System</p>
+        </footer>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

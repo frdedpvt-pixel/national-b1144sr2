@@ -61,6 +61,9 @@ app.use(express.urlencoded({ extended: true }));
 // Serve uploaded files
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
+// Serve hprproj (Teacher Help Platform)
+app.use('/hprproj', express.static(path.join(__dirname, 'hprproj')));
+
 // Initialize database
 initializeDatabase();
 

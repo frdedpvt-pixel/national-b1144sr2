@@ -1,0 +1,852 @@
+[
+  {
+    "student_id": "S1050",
+    "School": "Washington Tech",
+    "age": 15,
+    "grade": "9th",
+    "Mastery": {
+      "Numbers": 0,
+      "Addition": 0,
+      "Subtraction": 0.19,
+      "Multiplication": 0.06,
+      "Division": 0,
+      "Fractions": 0,
+      "Decimals": 0.08,
+      "Algebra": 0.08,
+      "Equations": 0.09
+    }
+  },
+  {
+    "student_id": "S1051",
+    "School": "Jefferson Academy",
+    "age": 15,
+    "grade": "12th",
+    "Mastery": {
+      "Numbers": 0.27,
+      "Addition": 0.34,
+      "Subtraction": 0.17,
+      "Multiplication": 0.24,
+      "Division": 0.26,
+      "Fractions": 0.51,
+      "Decimals": 0.2,
+      "Algebra": 0.28,
+      "Equations": 0.38
+    }
+  },
+  {
+    "student_id": "S1052",
+    "School": "Jefferson Academy",
+    "age": 14,
+    "grade": "9th",
+    "Mastery": {
+      "Numbers": 0.37,
+      "Addition": 0.38,
+      "Subtraction": 0.39,
+      "Multiplication": 0.58,
+      "Division": 0.31,
+      "Fractions": 0.31,
+      "Decimals": 0.37,
+      "Algebra": 0.39,
+      "Equations": 0.64
+    }
+  },
+  {
+    "student_id": "S1053",
+    "School": "Lincoln High",
+    "age": 16,
+    "grade": "12th",
+    "Mastery": {
+      "Numbers": 0.38,
+      "Addition": 0.41,
+      "Subtraction": 0.34,
+      "Multiplication": 0.46,
+      "Division": 0.11,
+      "Fractions": 0.36,
+      "Decimals": 0.09,
+      "Algebra": 0.46,
+      "Equations": 0.26
+    }
+  },
+  {
+    "student_id": "S1054",
+    "School": "Lincoln High",
+    "age": 15,
+    "grade": "9th",
+    "Mastery": {
+      "Numbers": 0.99,
+      "Addition": 1,
+      "Subtraction": 0.8,
+      "Multiplication": 0.95,
+      "Division": 0.81,
+      "Fractions": 0.77,
+      "Decimals": 0.86,
+      "Algebra": 1,
+      "Equations": 0.85
+    }
+  },
+  {
+    "student_id": "S1055",
+    "School": "Roosevelt High",
+    "age": 18,
+    "grade": "12th",
+    "Mastery": {
+      "Numbers": 0.58,
+      "Addition": 0.45,
+      "Subtraction": 0.39,
+      "Multiplication": 0.57,
+      "Division": 0.6,
+      "Fractions": 0.43,
+      "Decimals": 0.53,
+      "Algebra": 0.37,
+      "Equations": 0.41
+    }
+  },
+  {
+    "student_id": "S1056",
+    "School": "Washington Tech",
+    "age": 14,
+    "grade": "9th",
+    "Mastery": {
+      "Numbers": 0.72,
+      "Addition": 0.93,
+      "Subtraction": 1,
+      "Multiplication": 1,
+      "Division": 1,
+      "Fractions": 1,
+      "Decimals": 0.7,
+      "Algebra": 0.89,
+      "Equations": 1
+    }
+  },
+  {
+    "student_id": "S1057",
+    "School": "Washington Tech",
+    "age": 14,
+    "grade": "11th",
+    "Mastery": {
+      "Numbers": 0.46,
+      "Addition": 0.51,
+      "Subtraction": 0.41,
+      "Multiplication": 0.63,
+      "Division": 0.66,
+      "Fractions": 0.43,
+      "Decimals": 0.36,
+      "Algebra": 0.61,
+      "Equations": 0.52
+    }
+  },
+  {
+    "student_id": "S1058",
+    "School": "Washington Tech",
+    "age": 16,
+    "grade": "11th",
+    "Mastery": {
+      "Numbers": 0.14,
+      "Addition": 0,
+      "Subtraction": 0.17,
+      "Multiplication": 0,
+      "Division": 0.13,
+      "Fractions": 0,
+      "Decimals": 0,
+      "Algebra": 0.21,
+      "Equations": 0
+    }
+  },
+  {
+    "student_id": "S1059",
+    "School": "Roosevelt High",
+    "age": 17,
+    "grade": "10th",
+    "Mastery": {
+      "Numbers": 0.73,
+      "Addition": 0.88,
+      "Subtraction": 0.74,
+      "Multiplication": 0.62,
+      "Division": 0.81,
+      "Fractions": 0.63,
+      "Decimals": 0.59,
+      "Algebra": 0.82,
+      "Equations": 0.87
+    }
+  },
+  {
+    "student_id": "S1060",
+    "School": "Jefferson Academy",
+    "age": 17,
+    "grade": "11th",
+    "Mastery": {
+      "Numbers": 0.65,
+      "Addition": 0.54,
+      "Subtraction": 0.48,
+      "Multiplication": 0.55,
+      "Division": 0.49,
+      "Fractions": 0.73,
+      "Decimals": 0.53,
+      "Algebra": 0.72,
+      "Equations": 0.66
+    }
+  },
+  {
+    "student_id": "S1061",
+    "School": "Roosevelt High",
+    "age": 17,
+    "grade": "10th",
+    "Mastery": {
+      "Numbers": 0.35,
+      "Addition": 0.43,
+      "Subtraction": 0.48,
+      "Multiplication": 0.44,
+      "Division": 0.44,
+      "Fractions": 0.53,
+      "Decimals": 0.5,
+      "Algebra": 0.62,
+      "Equations": 0.63
+    }
+  },
+  {
+    "student_id": "S1062",
+    "School": "Roosevelt High",
+    "age": 14,
+    "grade": "12th",
+    "Mastery": {
+      "Numbers": 0.56,
+      "Addition": 0.66,
+      "Subtraction": 0.68,
+      "Multiplication": 0.8,
+      "Division": 0.73,
+      "Fractions": 0.69,
+      "Decimals": 0.85,
+      "Algebra": 0.56,
+      "Equations": 0.82
+    }
+  },
+  {
+    "student_id": "S1063",
+    "School": "Jefferson Academy",
+    "age": 16,
+    "grade": "10th",
+    "Mastery": {
+      "Numbers": 0.49,
+      "Addition": 0.4,
+      "Subtraction": 0.65,
+      "Multiplication": 0.63,
+      "Division": 0.69,
+      "Fractions": 0.39,
+      "Decimals": 0.34,
+      "Algebra": 0.55,
+      "Equations": 0.68
+    }
+  },
+  {
+    "student_id": "S1064",
+    "School": "Washington Tech",
+    "age": 17,
+    "grade": "12th",
+    "Mastery": {
+      "Numbers": 0.26,
+      "Addition": 0.48,
+      "Subtraction": 0.36,
+      "Multiplication": 0.5,
+      "Division": 0.22,
+      "Fractions": 0.32,
+      "Decimals": 0.33,
+      "Algebra": 0.49,
+      "Equations": 0.37
+    }
+  },
+  {
+    "student_id": "S1065",
+    "School": "Jefferson Academy",
+    "age": 16,
+    "grade": "12th",
+    "Mastery": {
+      "Numbers": 0.03,
+      "Addition": 0.23,
+      "Subtraction": 0.27,
+      "Multiplication": 0.25,
+      "Division": 0.22,
+      "Fractions": 0.15,
+      "Decimals": 0.27,
+      "Algebra": 0.34,
+      "Equations": 0.05
+    }
+  },
+  {
+    "student_id": "S1066",
+    "School": "Washington Tech",
+    "age": 17,
+    "grade": "12th",
+    "Mastery": {
+      "Numbers": 0,
+      "Addition": 0,
+      "Subtraction": 0.03,
+      "Multiplication": 0.22,
+      "Division": 0,
+      "Fractions": 0,
+      "Decimals": 0,
+      "Algebra": 0.2,
+      "Equations": 0.17
+    }
+  },
+  {
+    "student_id": "S1067",
+    "School": "Jefferson Academy",
+    "age": 14,
+    "grade": "9th",
+    "Mastery": {
+      "Numbers": 0.82,
+      "Addition": 0.77,
+      "Subtraction": 0.96,
+      "Multiplication": 0.86,
+      "Division": 0.86,
+      "Fractions": 0.91,
+      "Decimals": 0.83,
+      "Algebra": 0.8,
+      "Equations": 0.96
+    }
+  },
+  {
+    "student_id": "S1068",
+    "School": "Jefferson Academy",
+    "age": 16,
+    "grade": "9th",
+    "Mastery": {
+      "Numbers": 0.48,
+      "Addition": 0.56,
+      "Subtraction": 0.81,
+      "Multiplication": 0.76,
+      "Division": 0.7,
+      "Fractions": 0.82,
+      "Decimals": 0.49,
+      "Algebra": 0.53,
+      "Equations": 0.79
+    }
+  },
+  {
+    "student_id": "S1069",
+    "School": "Lincoln High",
+    "age": 14,
+    "grade": "12th",
+    "Mastery": {
+      "Numbers": 0.33,
+      "Addition": 0.43,
+      "Subtraction": 0.21,
+      "Multiplication": 0.28,
+      "Division": 0.14,
+      "Fractions": 0.42,
+      "Decimals": 0.48,
+      "Algebra": 0.22,
+      "Equations": 0.27
+    }
+  },
+  {
+    "student_id": "S1070",
+    "School": "Jefferson Academy",
+    "age": 15,
+    "grade": "10th",
+    "Mastery": {
+      "Numbers": 0.25,
+      "Addition": 0.26,
+      "Subtraction": 0.57,
+      "Multiplication": 0.57,
+      "Division": 0.46,
+      "Fractions": 0.56,
+      "Decimals": 0.36,
+      "Algebra": 0.42,
+      "Equations": 0.51
+    }
+  },
+  {
+    "student_id": "S1071",
+    "School": "Jefferson Academy",
+    "age": 17,
+    "grade": "9th",
+    "Mastery": {
+      "Numbers": 0.39,
+      "Addition": 0.54,
+      "Subtraction": 0.56,
+      "Multiplication": 0.56,
+      "Division": 0.72,
+      "Fractions": 0.61,
+      "Decimals": 0.54,
+      "Algebra": 0.45,
+      "Equations": 0.72
+    }
+  },
+  {
+    "student_id": "S1072",
+    "School": "Lincoln High",
+    "age": 16,
+    "grade": "9th",
+    "Mastery": {
+      "Numbers": 0.41,
+      "Addition": 0.59,
+      "Subtraction": 0.56,
+      "Multiplication": 0.39,
+      "Division": 0.56,
+      "Fractions": 0.48,
+      "Decimals": 0.57,
+      "Algebra": 0.53,
+      "Equations": 0.36
+    }
+  },
+  {
+    "student_id": "S1073",
+    "School": "Roosevelt High",
+    "age": 14,
+    "grade": "9th",
+    "Mastery": {
+      "Numbers": 0.73,
+      "Addition": 0.82,
+      "Subtraction": 0.89,
+      "Multiplication": 0.73,
+      "Division": 0.95,
+      "Fractions": 0.63,
+      "Decimals": 0.94,
+      "Algebra": 0.68,
+      "Equations": 0.65
+    }
+  },
+  {
+    "student_id": "S1074",
+    "School": "Jefferson Academy",
+    "age": 14,
+    "grade": "11th",
+    "Mastery": {
+      "Numbers": 0.95,
+      "Addition": 0.89,
+      "Subtraction": 1,
+      "Multiplication": 1,
+      "Division": 0.86,
+      "Fractions": 0.87,
+      "Decimals": 1,
+      "Algebra": 0.83,
+      "Equations": 0.81
+    }
+  },
+  {
+    "student_id": "S1075",
+    "School": "Lincoln High",
+    "age": 14,
+    "grade": "11th",
+    "Mastery": {
+      "Numbers": 0.16,
+      "Addition": 0.16,
+      "Subtraction": 0.02,
+      "Multiplication": 0.08,
+      "Division": 0.39,
+      "Fractions": 0.34,
+      "Decimals": 0.32,
+      "Algebra": 0.16,
+      "Equations": 0.28
+    }
+  },
+  {
+    "student_id": "S1076",
+    "School": "Jefferson Academy",
+    "age": 18,
+    "grade": "10th",
+    "Mastery": {
+      "Numbers": 0.45,
+      "Addition": 0.57,
+      "Subtraction": 0.45,
+      "Multiplication": 0.44,
+      "Division": 0.24,
+      "Fractions": 0.4,
+      "Decimals": 0.58,
+      "Algebra": 0.47,
+      "Equations": 0.41
+    }
+  },
+  {
+    "student_id": "S1077",
+    "School": "Lincoln High",
+    "age": 16,
+    "grade": "12th",
+    "Mastery": {
+      "Numbers": 0.59,
+      "Addition": 0.27,
+      "Subtraction": 0.48,
+      "Multiplication": 0.47,
+      "Division": 0.25,
+      "Fractions": 0.57,
+      "Decimals": 0.29,
+      "Algebra": 0.46,
+      "Equations": 0.53
+    }
+  },
+  {
+    "student_id": "S1078",
+    "School": "Lincoln High",
+    "age": 15,
+    "grade": "12th",
+    "Mastery": {
+      "Numbers": 0.87,
+      "Addition": 0.89,
+      "Subtraction": 0.51,
+      "Multiplication": 0.56,
+      "Division": 0.88,
+      "Fractions": 0.68,
+      "Decimals": 0.83,
+      "Algebra": 0.8,
+      "Equations": 0.56
+    }
+  },
+  {
+    "student_id": "S1079",
+    "School": "Roosevelt High",
+    "age": 15,
+    "grade": "12th",
+    "Mastery": {
+      "Numbers": 0.64,
+      "Addition": 0.33,
+      "Subtraction": 0.28,
+      "Multiplication": 0.29,
+      "Division": 0.46,
+      "Fractions": 0.4,
+      "Decimals": 0.58,
+      "Algebra": 0.51,
+      "Equations": 0.43
+    }
+  },
+  {
+    "student_id": "S1080",
+    "School": "Jefferson Academy",
+    "age": 14,
+    "grade": "11th",
+    "Mastery": {
+      "Numbers": 0.31,
+      "Addition": 0.12,
+      "Subtraction": 0.08,
+      "Multiplication": 0.06,
+      "Division": 0.16,
+      "Fractions": 0.16,
+      "Decimals": 0.16,
+      "Algebra": 0.16,
+      "Equations": 0.04
+    }
+  },
+  {
+    "student_id": "S1081",
+    "School": "Jefferson Academy",
+    "age": 18,
+    "grade": "9th",
+    "Mastery": {
+      "Numbers": 0.45,
+      "Addition": 0.79,
+      "Subtraction": 0.5,
+      "Multiplication": 0.49,
+      "Division": 0.79,
+      "Fractions": 0.59,
+      "Decimals": 0.69,
+      "Algebra": 0.74,
+      "Equations": 0.73
+    }
+  },
+  {
+    "student_id": "S1082",
+    "School": "Jefferson Academy",
+    "age": 17,
+    "grade": "12th",
+    "Mastery": {
+      "Numbers": 1,
+      "Addition": 0.87,
+      "Subtraction": 1,
+      "Multiplication": 0.89,
+      "Division": 1,
+      "Fractions": 0.89,
+      "Decimals": 1,
+      "Algebra": 0.98,
+      "Equations": 1
+    }
+  },
+  {
+    "student_id": "S1083",
+    "School": "Roosevelt High",
+    "age": 15,
+    "grade": "11th",
+    "Mastery": {
+      "Numbers": 0.84,
+      "Addition": 0.57,
+      "Subtraction": 0.73,
+      "Multiplication": 0.68,
+      "Division": 0.71,
+      "Fractions": 0.68,
+      "Decimals": 0.61,
+      "Algebra": 0.84,
+      "Equations": 0.57
+    }
+  },
+  {
+    "student_id": "S1084",
+    "School": "Roosevelt High",
+    "age": 15,
+    "grade": "10th",
+    "Mastery": {
+      "Numbers": 0.8,
+      "Addition": 0.63,
+      "Subtraction": 0.48,
+      "Multiplication": 0.62,
+      "Division": 0.7,
+      "Fractions": 0.74,
+      "Decimals": 0.48,
+      "Algebra": 0.81,
+      "Equations": 0.57
+    }
+  },
+  {
+    "student_id": "S1085",
+    "School": "Lincoln High",
+    "age": 15,
+    "grade": "9th",
+    "Mastery": {
+      "Numbers": 0,
+      "Addition": 0.06,
+      "Subtraction": 0,
+      "Multiplication": 0.04,
+      "Division": 0.03,
+      "Fractions": 0.06,
+      "Decimals": 0.13,
+      "Algebra": 0,
+      "Equations": 0.14
+    }
+  },
+  {
+    "student_id": "S1086",
+    "School": "Jefferson Academy",
+    "age": 15,
+    "grade": "11th",
+    "Mastery": {
+      "Numbers": 0.36,
+      "Addition": 0.36,
+      "Subtraction": 0.59,
+      "Multiplication": 0.6,
+      "Division": 0.47,
+      "Fractions": 0.49,
+      "Decimals": 0.4,
+      "Algebra": 0.47,
+      "Equations": 0.36
+    }
+  },
+  {
+    "student_id": "S1087",
+    "School": "Lincoln High",
+    "age": 17,
+    "grade": "9th",
+    "Mastery": {
+      "Numbers": 0,
+      "Addition": 0.25,
+      "Subtraction": 0.08,
+      "Multiplication": 0,
+      "Division": 0.12,
+      "Fractions": 0,
+      "Decimals": 0.1,
+      "Algebra": 0.17,
+      "Equations": 0.19
+    }
+  },
+  {
+    "student_id": "S1088",
+    "School": "Jefferson Academy",
+    "age": 14,
+    "grade": "9th",
+    "Mastery": {
+      "Numbers": 0.54,
+      "Addition": 0.57,
+      "Subtraction": 0.76,
+      "Multiplication": 0.83,
+      "Division": 0.8,
+      "Fractions": 0.7,
+      "Decimals": 0.66,
+      "Algebra": 0.92,
+      "Equations": 0.77
+    }
+  },
+  {
+    "student_id": "S1089",
+    "School": "Washington Tech",
+    "age": 14,
+    "grade": "12th",
+    "Mastery": {
+      "Numbers": 0.8,
+      "Addition": 0.54,
+      "Subtraction": 0.46,
+      "Multiplication": 0.68,
+      "Division": 0.65,
+      "Fractions": 0.66,
+      "Decimals": 0.61,
+      "Algebra": 0.56,
+      "Equations": 0.55
+    }
+  },
+  {
+    "student_id": "S1090",
+    "School": "Washington Tech",
+    "age": 15,
+    "grade": "9th",
+    "Mastery": {
+      "Numbers": 0.75,
+      "Addition": 0.64,
+      "Subtraction": 0.66,
+      "Multiplication": 0.46,
+      "Division": 0.61,
+      "Fractions": 0.63,
+      "Decimals": 0.39,
+      "Algebra": 0.57,
+      "Equations": 0.76
+    }
+  },
+  {
+    "student_id": "S1091",
+    "School": "Roosevelt High",
+    "age": 15,
+    "grade": "9th",
+    "Mastery": {
+      "Numbers": 0.9,
+      "Addition": 0.64,
+      "Subtraction": 0.84,
+      "Multiplication": 0.7,
+      "Division": 0.96,
+      "Fractions": 0.7,
+      "Decimals": 0.85,
+      "Algebra": 0.74,
+      "Equations": 0.84
+    }
+  },
+  {
+    "student_id": "S1092",
+    "School": "Lincoln High",
+    "age": 15,
+    "grade": "11th",
+    "Mastery": {
+      "Numbers": 0.24,
+      "Addition": 0.33,
+      "Subtraction": 0.26,
+      "Multiplication": 0.36,
+      "Division": 0.21,
+      "Fractions": 0.45,
+      "Decimals": 0.4,
+      "Algebra": 0.37,
+      "Equations": 0.14
+    }
+  },
+  {
+    "student_id": "S1093",
+    "School": "Lincoln High",
+    "age": 15,
+    "grade": "11th",
+    "Mastery": {
+      "Numbers": 0.02,
+      "Addition": 0.08,
+      "Subtraction": 0.19,
+      "Multiplication": 0.03,
+      "Division": 0.05,
+      "Fractions": 0.22,
+      "Decimals": 0.25,
+      "Algebra": 0,
+      "Equations": 0.28
+    }
+  },
+  {
+    "student_id": "S1094",
+    "School": "Jefferson Academy",
+    "age": 14,
+    "grade": "11th",
+    "Mastery": {
+      "Numbers": 1,
+      "Addition": 1,
+      "Subtraction": 0.8,
+      "Multiplication": 0.86,
+      "Division": 0.94,
+      "Fractions": 0.82,
+      "Decimals": 0.87,
+      "Algebra": 0.73,
+      "Equations": 0.98
+    }
+  },
+  {
+    "student_id": "S1095",
+    "School": "Lincoln High",
+    "age": 14,
+    "grade": "11th",
+    "Mastery": {
+      "Numbers": 1,
+      "Addition": 1,
+      "Subtraction": 0.86,
+      "Multiplication": 1,
+      "Division": 1,
+      "Fractions": 0.94,
+      "Decimals": 0.86,
+      "Algebra": 1,
+      "Equations": 1
+    }
+  },
+  {
+    "student_id": "S1096",
+    "School": "Lincoln High",
+    "age": 16,
+    "grade": "9th",
+    "Mastery": {
+      "Numbers": 0.33,
+      "Addition": 0.08,
+      "Subtraction": 0.18,
+      "Multiplication": 0.23,
+      "Division": 0.05,
+      "Fractions": 0.23,
+      "Decimals": 0.18,
+      "Algebra": 0.2,
+      "Equations": 0.14
+    }
+  },
+  {
+    "student_id": "S1097",
+    "School": "Roosevelt High",
+    "age": 14,
+    "grade": "11th",
+    "Mastery": {
+      "Numbers": 0.42,
+      "Addition": 0.26,
+      "Subtraction": 0.48,
+      "Multiplication": 0.2,
+      "Division": 0.47,
+      "Fractions": 0.21,
+      "Decimals": 0.35,
+      "Algebra": 0.24,
+      "Equations": 0.21
+    }
+  },
+  {
+    "student_id": "S1098",
+    "School": "Roosevelt High",
+    "age": 15,
+    "grade": "10th",
+    "Mastery": {
+      "Numbers": 0.03,
+      "Addition": 0.12,
+      "Subtraction": 0,
+      "Multiplication": 0.19,
+      "Division": 0.13,
+      "Fractions": 0.04,
+      "Decimals": 0.26,
+      "Algebra": 0.1,
+      "Equations": 0
+    }
+  },
+  {
+    "student_id": "S1099",
+    "School": "Jefferson Academy",
+    "age": 14,
+    "grade": "11th",
+    "Mastery": {
+      "Numbers": 0.4,
+      "Addition": 0.46,
+      "Subtraction": 0.6,
+      "Multiplication": 0.5,
+      "Division": 0.59,
+      "Fractions": 0.36,
+      "Decimals": 0.47,
+      "Algebra": 0.64,
+      "Equations": 0.61
+    }
+  }
+]
