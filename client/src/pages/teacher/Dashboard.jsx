@@ -92,7 +92,7 @@ export default function TeacherDashboard() {
                     </a>
                     <button
                         className="btn btn-primary btn-large"
-                        onClick={() => window.open('http://localhost:5000/hprproj/index.html', '_blank')}
+                        onClick={() => window.open('http://localhost:5001/hprproj/index.html', '_blank')}
                         style={{ cursor: 'pointer' }}
                     >
                         📚 Teacher Help

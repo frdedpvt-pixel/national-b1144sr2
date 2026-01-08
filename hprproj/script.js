@@ -1,7 +1,7 @@
 // Causal Knowledge Tracing System - Frontend JavaScript
 // Handles API communication and UI updates
 
-const API_BASE = 'http://localhost:5001/api';
+const API_BASE = 'http://localhost:5500/api';
 
 let currentGraph = null;
 let currentStudent = null;
