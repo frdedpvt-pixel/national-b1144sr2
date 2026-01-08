@@ -823,7 +823,7 @@ if __name__ == '__main__':
     print("=" * 70)
     print("Causality-Aware Knowledge Tracing System - Backend")
     print("=" * 70)
-    print("\nStarting Flask server on http://localhost:5001")
+    print("\nStarting Flask server on http://localhost:5500")
     print("\nAPI Endpoints:")
     print("  GET  /api/graph     - Get concept graph structure")
     print("  GET  /api/student   - Get student mastery state")
