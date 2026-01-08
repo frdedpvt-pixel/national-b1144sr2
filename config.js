@@ -20,7 +20,7 @@ export const config = {
     toxicKeywords: [
       'hate', 'stupid', 'idiot', 'dumb', 'loser',
       'ugly', 'fat', 'kill', 'die', 'shut up',
-      'bullying', 'bully', 'racist', 'sexist'
+      'bullying', 'bully', 'racist', 'sexist', 'shit', 'retard', 'double baterry', 'bona'
     ]
   },
 
@@ -41,6 +41,6 @@ export const config = {
   },
 
   // Server Configuration
-  port: 5000,
+  port: 5001,
   clientUrl: 'http://localhost:5173'
 };

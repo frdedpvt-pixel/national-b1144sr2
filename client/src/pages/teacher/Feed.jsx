@@ -217,30 +217,33 @@ export default function TeacherFeed() {
                             <button type="submit" className="btn btn-primary" disabled={posting}>
                                 {posting ? 'Publishing...' : 'Publish Post'}
                             </button>
-                        </form>
-                    </div>
-                )}
+                        </form >
+                    </div >
+                )
+                }
 
-                {loading ? (
-                    <div className="text-center">
-                        <div className="spinner"></div>
-                    </div>
-                ) : filteredPosts.length === 0 ? (
-                    <div className="card text-center">
-                        <p className="text-muted">
-                            {activeTag === 'All'
-                                ? "No posts yet. Be the first to share something!"
-                                : `No posts under ${activeTag} category yet.`}
-                        </p>
-                    </div>
-                ) : (
-                    <div className="flex flex-col gap-md">
-                        {filteredPosts.map(post => (
-                            <PostCard key={post.id} post={post} />
-                        ))}
-                    </div>
-                )}
-            </div>
+                {
+                    loading ? (
+                        <div className="text-center">
+                            <div className="spinner"></div>
+                        </div>
+                    ) : filteredPosts.length === 0 ? (
+                        <div className="card text-center">
+                            <p className="text-muted">
+                                {activeTag === 'All'
+                                    ? "No posts yet. Be the first to share something!"
+                                    : `No posts under ${activeTag} category yet.`}
+                            </p>
+                        </div>
+                    ) : (
+                        <div className="flex flex-col gap-md">
+                            {filteredPosts.map(post => (
+                                <PostCard key={post.id} post={post} />
+                            ))}
+                        </div>
+                    )
+                }
+            </div >
         </>
     );
 }
